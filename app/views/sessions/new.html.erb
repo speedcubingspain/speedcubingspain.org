@@ -6,7 +6,7 @@
     <p class="text-center">
     Para poder conectarte a la página de nuestra asociación, necesitas una cuenta en la página de la <%= link_to "World Cube Association", wca_base_url, target: "_blank" %>.
     <br/>
-    Al hacer clic en "Conectarse a través de la WCA" serás redirigido a la página de la WCA para tu identificación, y luego serás redirigido a la página de la AMS autenticado.
+    Al hacer clic en "Conectarse a través de la WCA" serás redirigido a la página de la WCA para tu identificación, y luego serás redirigido a la página de la AES autenticado.
     </p>
     <%= simple_form_for :signin, url: signin_with_wca_path, html: { class: "text-center signin-form" }, wrapper: :horizontal_form do |f| %>
       <%= f.button :submit, class: "mb-4" %>

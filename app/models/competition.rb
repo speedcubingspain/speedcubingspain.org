@@ -7,7 +7,6 @@ class Competition < ApplicationRecord
 
   scope :upcoming, -> (n=100) { where("start_date > ?", 2.days.ago).order(:start_date).limit(n) }
   scope :in_spain, -> { where(country_iso2: "ES") }
-  scope :in_madrid, -> { where("city like ?", "%Madrid%") }
 
   def self.process_json(json_competition)
     json_competition["delegates"] = json_competition["delegates"].map do |d|

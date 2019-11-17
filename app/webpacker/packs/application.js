@@ -10,7 +10,7 @@
 import 'bootstrap/dist/js/bootstrap';
 import Turbolinks from 'turbolinks';
 
-import 'ams';
+import 'aes';
 import 'jquery-ujs';
 import 'tablesorter';
 import 'hardwares';

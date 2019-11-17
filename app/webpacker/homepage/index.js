@@ -1,4 +1,4 @@
-import { getRecentCompetitions } from "ams/competitions_fetcher";
+import { getRecentCompetitions } from "aes/competitions_fetcher";
 
-window.ams = window.ams || {};
-window.ams.getRecentCompetitions = getRecentCompetitions;
+window.aes = window.aes || {};
+window.aes.getRecentCompetitions = getRecentCompetitions;

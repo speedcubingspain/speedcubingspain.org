@@ -1,8 +1,8 @@
 import {} from "selectize";
 
-window.ams = window.ams || {};
+window.aes = window.aes || {};
 
-window.ams.enableSelectize = function(tag_options) {
+window.aes.enableSelectize = function(tag_options) {
   $(".enable-selectize").each(function() {
     $(this).selectize({
       plugins: ['remove_button'],

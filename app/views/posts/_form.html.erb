@@ -25,7 +25,7 @@ $(function() {
     $(this).change(function() {
       let slugInput = $("#post_slug");
       if (!slugInput.hasClass("manually-changed")) {
-        slugInput.val(window.ams.computeSlug($(this).val()));
+        slugInput.val(window.aes.computeSlug($(this).val()));
       }
     });
     $(this).removeClass("compute-slug");
@@ -36,7 +36,7 @@ $(function() {
     });
     $(this).removeClass("slug");
   });
-  window.ams.enableSelectize(<%= post_tags_to_options %>);
-  window.ams.enableSimpleMDE();
+  window.aes.enableSelectize(<%= post_tags_to_options %>);
+  window.aes.enableSimpleMDE();
 });
 </script>

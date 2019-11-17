@@ -79,7 +79,7 @@ module ApplicationHelper
   end
 
   def page_title(page_title = "")
-    base_title = "Asociación Madrileña de Speedcubing"
+    base_title = "Asociación Española de Speedcubing"
     if page_title.blank?
       base_title
     else

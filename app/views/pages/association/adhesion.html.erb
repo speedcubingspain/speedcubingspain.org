@@ -1,20 +1,17 @@
 <% provide(:title, "Nuevo socio") %>
 <% provide(:active_section, "association") %>
 <%= render "layouts/page_wrapper", title: "Nuevo socio" do %>
-  <p>Parte de los medios financieros disponibles para la asociación provienen de las cuotas de socio. Cualquier persona puede hacerse socio de la asociación por un periodo de un año pagando una cuota de 10 €.</p>
+  <p>Parte de los medios financieros disponibles para la asociación provienen de las cuotas de socio. Cualquier persona puede hacerse socio de la asociación por un periodo de un año pagando una cuota de 12 €.</p>
 
   <p>El pago de la cuota de socio se realiza <%= link_to 'aquí', new_subscription_path %>. ¡Ojo, deberás haber iniciado sesión con tu cuenta de la WCA primero!</p>
 
   <p>Las ventajas disponibles para los socios son:</p>
 
   <ul>
-    <li>Descuento en las competiciones organizadas por la AMS.</li>
-    <li>Participas automáticamente en la <%= link_to "Liga AMS", page_path("league") %>.</li>
+    <li>Descuento en las competiciones organizadas por la AES.</li>
     <li>Aparecerás en el <%= link_to "Ránking", page_path("members/ranking/333/single") %> y <%= link_to "Medallero", page_path("members/medal_collection") %> de socios.</li>
     <li>Posibilidad de contar con el material de la asociación para tus eventos.</li>
-    <li>Podrás unirte al grupo de Telegram exclusivo para socios de la AMS.</li>
-    <li>Recibirás el boletín informativo mensual de la AMS.</li>
+    <li>Podrás unirte al grupo de Telegram exclusivo para socios de la AES.</li>
     <li>Podrás participar en los talleres que organizamos.</li>
-    <li>¡Y queda más por venir!</li>
   </ul>
 <% end %>

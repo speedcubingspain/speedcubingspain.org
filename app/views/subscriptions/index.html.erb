@@ -18,8 +18,8 @@
           </td>
           <td data-text="<%= s.last_active_subscription.until %>"><%= l(s.last_active_subscription.until) %></td>
           <td>
-            <%= mail_to s.ams_email, cc: "contacto@speedcubingmadrid.org", reply_to: "contacto@speedcubingmadrid.org", target: "_self" do %>
-              <%= s.ams_email %>
+            <%= mail_to s.email, cc: "contacto@speedcubingspain.org", reply_to: "contacto@speedcubingspain.org", target: "_self" do %>
+              <%= s.email %>
             <% end %>
           </td>
         </tr>
@@ -32,7 +32,7 @@
     <% end %>
   </div>
 
-  <%= mail_to "contacto@speedcubingmadrid.org", bcc: @subscribers.map(&:ams_email).join(","), reply_to: "contacto@speedcubingmadrid.org", target: "_self", class: "btn btn-success mb-4" do %>
+  <%= mail_to "contacto@speedcubingspain.org", bcc: @subscribers.map(&:email).join(","), reply_to: "contacto@speedcubingspain.org", target: "_self", class: "btn btn-success mb-4" do %>
     <i class='fa fa-envelope'></i> Enviar un correo electrónico a todos los socios
   <% end %>
 <% end %>

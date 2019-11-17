@@ -1,9 +1,9 @@
-<% provide(:title, "Cómo organizar una competición de Speedcubing en Madrid, España") %>
+<% provide(:title, "Cómo organizar una competición de Speedcubing en España") %>
 <% provide(:active_section, "speedcubing") %>
-<%= render "shared/nav_tutorials", current_page: :organizers, title: "Cómo organizar una competición de Speedcubing en Madrid, España" do %>
+<%= render "shared/nav_tutorials", current_page: :organizers, title: "Cómo organizar una competición de Speedcubing en España" do %>
 
-  <p>Este tutorial va dirigido a todos aquellos que deseen organizar una competición oficial de la WCA en España, y en particular en Madrid. Debes tener en cuenta todo lo que se encuentra en este documento, ya que es un resumen de todas las cosas impuestas por la WCA, buenos hábitos, contactos, etc. En resumen, todo lo que necesitarás. Ten en cuenta que el documento está en orden cronológico, así que no omitas ningún paso.</p>
-  <p>Nota: No hay necesidad de pasar por la WCA para organizar otro tipo de eventos sobre el cubo. Si este es su caso, puedes contactar con la AMS o a las diferentes personas de la comunidad a través de las páginas de contacto para obtener ayuda, pues los pasos son distintos.</p>
+  <p>Este tutorial va dirigido a todos aquellos que deseen organizar una competición oficial de la WCA en España. Debes tener en cuenta todo lo que se encuentra en este documento, ya que es un resumen de todas las cosas impuestas por la WCA, buenos hábitos, contactos, etc. En resumen, todo lo que necesitarás. Ten en cuenta que el documento está en orden cronológico, así que no omitas ningún paso.</p>
+  <p>Nota: No hay necesidad de pasar por la WCA para organizar otro tipo de eventos sobre el cubo. Si este es su caso, puedes contactar con la AES o a las diferentes personas de la comunidad a través de las páginas de contacto para obtener ayuda, pues los pasos son distintos.</p>
 
   <h3 id="1-preámbulo">1. Preámbulo</h3>
 
@@ -12,8 +12,8 @@
     <h4 id="1-1-asociaciones">1.1. Asociaciones</h4>
 
     <p><a href="https://www.worldcubeassociation.org/">World Cube Association (WCA)</a>: asumimos que estás familiarizado con esta asociación sin ánimo de lucro. Es la organización global que regula las competiciones de speedcubing en todo el mundo. Impone un reglamento y garantiza que todos los resultados registrados en la WCA se han realizado de acuerdo con la regulación establecida.</p>
-    <p><a href="http://www.asociacionrubik.es">Asoiación Española del Cubo de Rubik (AECR)</a>: asumimos que estás familiarizado con esta asociación sin ánimo de lucro. Es la organización española que colabora en al organización de competiciones en nuestro país.</p>
-    <p><%= link_to "Asociación Madrileña de Speedcubing (AMS)", root_path %>: esta asociación sin ánimo de lucro tiene como principal objetivo promover el mundo del speedcubing en Madrid. Tiene el material oficial de competición en Madrid y puede prestártelo si es necesario. Está compuesta principalmente por la Junta Directiva y los socios, miembros activos de la comunidad cubera.</p>
+    <p><%= link_to "Asociación Española de Speedcubing (AES)", root_path %>: esta asociación sin ánimo de lucro tiene como principal objetivo promover el mundo del speedcubing en España. Tiene el material oficial de competición en España y puede prestártelo si es necesario. Está compuesta principalmente por la Junta Directiva y los socios, miembros activos de la comunidad cubera.</p>
+    <p><%= link_to "Otras asociaciones", associations_path %></p>
 
     <h4 id="1-2-delegados-wca">1.2. Delegados WCA</h4>
 
@@ -52,7 +52,7 @@
       <li>La temperatura debe ser agradable.</li>
       <li>En el sentido más amplio, se aconseja tener un entorno lo menos molesto posible (temperatura, luminosidad, nivel sonoro, espacio, ...). Recuerda que es probable que vengan los mejores competidores, sería una lástima que no encontraran las mejores condiciones.</li>
     </ul>
-    <p>Recuerda que la AMS puede ayudarte en algunos casos con el alquiler del local. También tiene una póliza de seguro que le permite cubrirse en caso de problemas. Si deseas beneficiarte de este seguro, pregunta a la AMS enviando un correo electrónico a <a href="mailto:contacto@speedcubingmadrid.org">contacto@speedcubingmadrid.org</a> con la siguiente información: fecha(s) de la competición, nombre, dirección del sitio y/o tamaño del local.</p>
+    <p>Recuerda que la AES puede ayudarte en algunos casos con el alquiler del local. También tiene una póliza de seguro que le permite cubrirse en caso de problemas. Si deseas beneficiarte de este seguro, pregunta a la AES enviando un correo electrónico a <a href="mailto:contacto@speedcubingspain.org">contacto@speedcubingspain.org</a> con la siguiente información: fecha(s) de la competición, nombre, dirección del sitio y/o tamaño del local.</p>
 
     <h4 id="2-3-encontrar-una-fecha-provisional-y-un-delegado-wca">2.3. Encontrar una fecha provisional y un Delegado WCA</h4>
 
@@ -60,8 +60,8 @@
     <p>Primero, <b>debes</b> tener un Delegado WCA para tu competición. Para ello, envía un correo electrónico a los Delegados españoles (direcciones de contacto en la página de la WCA) explicando tu proyecto y ellos tratarán de estar disponibles. Recuerda escribir a todos a la vez. Por eso es <b>totalmente</b> necesario planear con anticipación la competición. Los Delegados WCA hacen todo su trabajo de forma totalmente voluntaria y no pueden garantizar su presencia durante todo el año. El Reglamento WCA exige que la competición sea oficial con al menos 28 días de antelación. En España, los Delegados WCA están divididos por zonas, pero puedes pedirle a cualquier Delegado español, o del mundo, que deleguen tu competición.</p>
     <p>En España, los Delegados son generalmente los más conscientes de la presencia de los equipos de competición. Cuéntales cuántos puestos de resolución quieres tener y te notificarán si hay algún problema con el material o si los equipos no está disponible para la fecha que quieres.</p>
     <p>Ponte en contacto con la comunidad para intentar prever el número de personas que estarán interesadas en tu competición. Por ejemplo: si organizas la competición durante los períodos de exámenes, tendrás menos personas.</p>
-    <p>Por último, consulta el <%= link_to "calendario de competiciones en la página de la AMS", competitions_path %>, que enumera las competiciones planificadas u oficiales. Esto evita tener dos competiciones al mismo tiempo. Si te has puesto en contacto con todos los Delegados españoles en el momento de tu solicitud, ellos podrán informarte.</p>
-    <p>Una vez que la fecha esté fijada con todas las personas mencionadas anteriormente, ingresa la competición en el <%= link_to "calendario de la AMS", competitions_path %> para que otros miembros de la comunidad sepan que planeas organizar en esa fecha. En este momento ya puedes validar la reserva del local.</p>
+    <p>Por último, consulta el <%= link_to "calendario de competiciones en la página de la AES", competitions_path %>, que enumera las competiciones planificadas u oficiales. Esto evita tener dos competiciones al mismo tiempo. Si te has puesto en contacto con todos los Delegados españoles en el momento de tu solicitud, ellos podrán informarte.</p>
+    <p>Una vez que la fecha esté fijada con todas las personas mencionadas anteriormente, ingresa la competición en el <%= link_to "calendario de la AES", competitions_path %> para que otros miembros de la comunidad sepan que planeas organizar en esa fecha. En este momento ya puedes validar la reserva del local.</p>
 
     <h4 id="2-4-establecer-un-primer-horario">2.4. Establecer un primer horario</h4>
 
@@ -133,7 +133,7 @@
       <li>Horario.</li>
       <li>Cronómetros de mano para los jueces.</li>
     </ul>
-    <p>La AMS puede proporcionarte (casi) todo el material necesario para llevar a cabo el campeonato.</p>
+    <p>La AES puede proporcionarte (casi) todo el material necesario para llevar a cabo el campeonato.</p>
 
     <h4 id="3-5-diplomas-y-premios">3.6. Diplomas y premios</h4>
 

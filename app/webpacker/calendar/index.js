@@ -1,10 +1,10 @@
 import 'fullcalendar';
 import _ from 'lodash';
-import { API_COMP_URL, CALENDAR_EVENTS_URL } from 'ams/url_utils';
+import { API_COMP_URL, CALENDAR_EVENTS_URL } from 'aes/url_utils';
 
 var moment = require("moment");
 
-window.ams = window.ams || {};
+window.aes = window.aes || {};
 
 function postEventUpdate(event, delta, revertFunc) {
   let eventData = {};
@@ -29,7 +29,7 @@ function postEventUpdate(event, delta, revertFunc) {
   });
 };
 
-window.ams.initCalendar = function(can_manage_events = false) {
+window.aes.initCalendar = function(can_manage_events = false) {
   if (!$("#calendar").hasClass("enable-calendar"))
     return;
   $("#calendar").fullCalendar({
@@ -53,7 +53,7 @@ window.ams.initCalendar = function(can_manage_events = false) {
         color: "#ef1f1c",
       },
       {
-        events: getAMSEvents,
+        events: getAESEvents,
       },
     ],
     forceEventDuration: true,
@@ -86,17 +86,17 @@ window.ams.initCalendar = function(can_manage_events = false) {
   $("#calendar").removeClass("enable-calendar");
 }
 
-window.ams.updateEvent = function(eventId, newEventData) {
+window.aes.updateEvent = function(eventId, newEventData) {
   let eventData = $('#calendar').fullCalendar('clientEvents', eventId)[0];
   _.merge(eventData, newEventData);
   $('#calendar').fullCalendar('updateEvent', eventData, true);
 }
 
-window.ams.createEvent = function(newEventData) {
+window.aes.createEvent = function(newEventData) {
   $('#calendar').fullCalendar('renderEvent', newEventData);
 }
 
-window.ams.removeEvent = function(eventId) {
+window.aes.removeEvent = function(eventId) {
   $('#calendar').fullCalendar('removeEvents', [eventId]);
 }
 
@@ -113,7 +113,7 @@ function getWcaCompetitions(start, end, timezone, callback) {
   });
 }
 
-function getAMSEvents(start, end, timezone, callback) {
+function getAESEvents(start, end, timezone, callback) {
   let requestUrl = CALENDAR_EVENTS_URL;
   $.get(requestUrl, function(data) {
     callback(data);
@@ -132,9 +132,6 @@ function externalEventToFcEvent(eventData) {
     // 'end' is an *exclusive* end date, meaning we need to add one
     endDate.add(1, 'd');
     eventData.end = endDate.format("YYYY-MM-DD");
-    if (eventData.city.includes("Madrid")) {
-      eventData.color = "#28a745";
-    }
   }
   return eventData;
 }

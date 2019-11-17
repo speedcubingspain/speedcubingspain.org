@@ -4,7 +4,7 @@ class CalendarEvent < ApplicationRecord
   validates_presence_of :end_time
 
   KINDS = {
-    "other_ams" => "Actividad AMS",
+    "other_aes" => "Actividad AES",
     "planned_competition" => "Competición siendo planeada",
   }.freeze
 
@@ -24,7 +24,7 @@ class CalendarEvent < ApplicationRecord
 
   def color
     case kind
-    when "other_ams"
+    when "other_aes"
       "#3639ed"
     when "planned_competition"
       "#ffa00e"

@@ -2,7 +2,7 @@ module CompetitionsHelper
   def class_and_status_from_person(sub_by_id, sub_by_name, person)
     if @subscribers_by_id.include?(person["wcaId"]) ||
        @subscribers_by_name.include?(person["name"].downcase)
-      ["success", "Socio de la AMS"]
+      ["success", "Socio de la AES"]
     elsif person["wcaId"]
       ["danger", "Sin descuento"]
     else

@@ -8,17 +8,17 @@
       </div>
     <% end %>
     <div class="amount">
-      <p>El precio de la cuota de socio anual es de 10 €, que puedes pagar haciendo clic en el botón a continuación:</p>
+      <p>El precio de la cuota de socio anual es de 12 €, que puedes pagar haciendo clic en el botón a continuación:</p>
     </div>
     <center>
       <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
         data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
         data-label="Pagar con tarjeta"
-        data-image="/stripe-ams_logo.png"
-        data-name="AMS"
+        data-image="/stripe-aes_logo.png"
+        data-name="AES"
         data-description="Cuota de socio anual"
-        data-email="<%= @current_user.ams_email %>"
-        data-amount="1000"
+        data-email="<%= @current_user.email %>"
+        data-amount="1200"
         data-currency="eur"
         data-locale="es"
         data-zip-code="true">

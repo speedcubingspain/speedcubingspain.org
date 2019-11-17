@@ -33,7 +33,6 @@
 @import '../src/sessions';
 @import '../src/hardwares';
 @import '../src/associations';
-@import '../src/league';
 @import '../src/competition_galleries';
 @import '../src/ranking';
 
@@ -106,7 +105,7 @@ blockquote {
   .tag-index > & {
     font-size: 1.25rem;
   }
-  .ams-post &, .regular-post &, .featured-post & {
+  .aes-post &, .regular-post &, .featured-post & {
     font-size: 1rem;
   }
 }

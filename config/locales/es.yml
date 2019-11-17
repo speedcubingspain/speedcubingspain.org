@@ -49,7 +49,7 @@ es:
         query: "Búsqueda"
         user_id: "ID del usuario"
       signin:
-        can_manage: "Soy organizador y/o Delegado WCA, y autorizo a la AMS a gestionar mis competiciones."
+        can_manage: "Soy organizador y/o Delegado WCA, y autorizo a la AES a gestionar mis competiciones."
       user:
         wca_id: "WCA ID"
         friendly_birthdate: "Fecha de nacimiento"
@@ -58,7 +58,7 @@ es:
         communication: "Equipo de Comunicación"
         software: "Equipo de Software"
         spanish_delegate: "Delegado WCA"
-        notify_subscription: "Activar las notificaciones (aviso de nuevas competiciones en Madrid y España, y de cuando la condición de socio vaya a expirar)"
+        notify_subscription: "Activar las notificaciones (aviso de nuevas competiciones en España, y de cuando la condición de socio vaya a expirar)"
       tag:
         name: "Alias de la etiqueta"
         color: "Color"

@@ -4,15 +4,15 @@
 <% last_sub = @user.last_subscription %>
 <% if @user.last_active_subscription %>
   <div class="alert alert-success">
-    Eres socio de la AMS hasta el <%= l(@user.last_active_subscription.until) %>.
+    Eres socio de la AES hasta el <%= l(@user.last_active_subscription.until) %>.
   </div>
 <% elsif @user.last_subscription %>
   <div class="alert alert-warning">
-    No eres socio de la AMS desde el <%= l(@user.last_subscription.until) %>.
+    No eres socio de la AES desde el <%= l(@user.last_subscription.until) %>.
   </div>
 <% else %>
   <div class="alert alert-danger">
-    No eres socio de la AMS.
+    No eres socio de la AES.
   </div>
 <% end %>
 <%= simple_form_for @user, wrapper: :horizontal_form, html: { class: "mb-4 user-edit-form" } do |f| %>
@@ -35,7 +35,7 @@
 
 <h2>Cuotas de socio anuales</h2>
 <div class="alert alert-info">
-  Si crees que la información a continuación es incorrecta, escribe un correo a <%= mail_to "juntadirectiva@speedcubingmadrid.org" %>.
+  Si crees que la información a continuación es incorrecta, escribe un correo a <%= mail_to "junta@speedcubingspain.org" %>.
 </div>
 <% if @user.subscriptions.empty? %>
   <div class="alert alert-warning">

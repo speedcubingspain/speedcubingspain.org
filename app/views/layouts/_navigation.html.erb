@@ -16,36 +16,33 @@
   <nav class="navbar navbar-expand-sm navbar-light">
     <div class="container">
       <div class="navbar-brand">
-        <%= link_to(image_tag(asset_pack_path("images/ams_logo.svg"), class: "brand-logo"), root_path) %>
+        <%= link_to(image_tag(asset_pack_path("images/aes_logo.svg"), class: "brand-logo"), root_path) %>
         <div class="brand-header">
           <div class="brand-name">
             <%= link_to root_path do %>
-              <span class="black d-none d-md-block">Asociación Madrileña de Speedcubing</span>
-              <span class="black d-md-none">AMS</span>
+              <span class="black d-none d-md-block">Asociación Española de Speedcubing</span>
+              <span class="black d-md-none">AES</span>
             <% end %>
           </div>
           <div class="brand-social">
-            <a href="https://www.instagram.com/amspeedcubing/" target="_blank">
+            <a href="https://www.instagram.com/aespeedcubing_/" target="_blank">
               <i class="fa fa-instagram"></i>
             </a>
-            <a href="https://twitter.com/AMSpeedcubing/" target="_blank">
+            <a href="https://twitter.com/AESpeedcubing/" target="_blank">
               <i class="fa fa-twitter"></i>
             </a>
-            <a href="https://www.facebook.com/AMSpeedcubing/" target="_blank">
+            <a href="https://www.facebook.com/AESpeedcubing/" target="_blank">
               <i class="fa fa-facebook-official"></i>
-            </a>
-            <a href="https://www.youtube.com/channel/UCMliW3yEIKsQGXoS06RFQdQ/" target="_blank">
-              <i class="fa fa-youtube-play"></i>
             </a>
           </div>
         </div>
       </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-ams" aria-controls="navbar-ams" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-aes" aria-controls="navbar-aes" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="navbar-container w-100">
-        <div id="navbar-ams" class="collapse navbar-collapse justify-content-sm-center rounded">
+        <div id="navbar-aes" class="collapse navbar-collapse justify-content-sm-center rounded">
           <ul class="navbar-nav">
             <li class="nav-item">
               <% active = section == "home" ? "active" : nil %>
@@ -88,7 +85,6 @@
                 <%= link_to "Lista", page_path("members"), class: "dropdown-item" %>
                 <%= link_to "Ránking", page_path("members/ranking/333/single"), class: "dropdown-item" %>
                 <%= link_to "Medallero", page_path("members/medal_collection"), class: "dropdown-item" %>
-                <%= link_to "Liga AMS", page_path("league"), class: "dropdown-item" %>
               </div>
             </li>
             <li class="nav-item">

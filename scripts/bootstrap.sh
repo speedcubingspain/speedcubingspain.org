@@ -1,10 +1,10 @@
 apt-get update
 apt-get install -y curl git vim htop apt-transport-https
 
-# Create ams user if does not exist.
-if ! id -u ams &>/dev/null; then
-  useradd -m -s /bin/bash ams
-  chown ams:ams /home/ams
+# Create aes user if does not exist.
+if ! id -u aes &>/dev/null; then
+  useradd -m -s /bin/bash aes
+  chown aes:aes /home/aes
 fi
 
 echo "Setting up ssh keys for members."
@@ -18,11 +18,11 @@ for user in albertopdrf; do
   curl -s $public_keys_url >> $tmp_authorized_keys_path
 done
 
-su ams -c "mkdir -p /home/ams/.ssh"
-su ams -c "touch /home/ams/.ssh/authorized_keys"
-mv /home/ams/.ssh/authorized_keys /home/ams/.ssh/authorized_keys.bak
-chown ams:ams /tmp/authorized_keys
-mv /tmp/authorized_keys /home/ams/.ssh
+su aes -c "mkdir -p /home/aes/.ssh"
+su aes -c "touch /home/aes/.ssh/authorized_keys"
+mv /home/aes/.ssh/authorized_keys /home/aes/.ssh/authorized_keys.bak
+chown aes:aes /tmp/authorized_keys
+mv /tmp/authorized_keys /home/aes/.ssh
 
 
 # Setting up rails and db
@@ -36,12 +36,12 @@ apt-get update
 
 apt-get install -y postgresql-10
 
-user_exists=`sudo -u postgres psql -tAc "select 1 from pg_catalog.pg_roles where rolname='speedcubingmadrid';"`
+user_exists=`sudo -u postgres psql -tAc "select 1 from pg_catalog.pg_roles where rolname='speedcubingspain';"`
 
 if [ "x$user_exists" != "x1" ]; then
   password=`openssl rand -base64 16`
-  sudo -u postgres psql -c "create role speedcubingmadrid login password '$password' createdb;"
-  su ams -c "echo 'DATABASE_PASSWORD=$password' >> /home/ams/.env.production"
+  sudo -u postgres psql -c "create role speedcubingspain login password '$password' createdb;"
+  su aes -c "echo 'DATABASE_PASSWORD=$password' >> /home/aes/.env.production"
 fi
 
 # to build rbenv
@@ -65,28 +65,28 @@ apt-get install -y poppler-utils
 # for certbot
 apt-get install -y python-certbot-nginx -t stretch-backports
 
-if [ ! -d /home/ams/speedcubingmadrid.org ]; then
-  su ams -c "cd /home/ams && git clone https://github.com/speedcubingmadrid/speedcubingmadrid.org.git /home/ams/speedcubingmadrid.org"
+if [ ! -d /home/aes/speedcubingspain.org ]; then
+  su aes -c "cd /home/aes && git clone https://github.com/speedcubingspain/speedcubingspain.org.git /home/aes/speedcubingspain.org"
 fi
 apt-get install -y nginx
-cp /home/ams/speedcubingmadrid.org/prod_conf/ams.conf /etc/nginx/conf.d/
-cp /home/ams/speedcubingmadrid.org/prod_conf/pre_certif.conf /etc/nginx/conf.d/
+cp /home/aes/speedcubingspain.org/prod_conf/aes.conf /etc/nginx/conf.d/
+cp /home/aes/speedcubingspain.org/prod_conf/pre_certif.conf /etc/nginx/conf.d/
 # Create an empty https conf since we don't have a certificate yet
-touch /etc/nginx/ams_https.conf
+touch /etc/nginx/aes_https.conf
 
 service nginx restart
 
 read -p "Do you want to create a new certificate for the server? (N/y)" user_choice
 if [ "x$user_choice" == "xy" ]; then
-  /home/ams/speedcubingmadrid.org/scripts/prod_cert.sh create_cert
-  cp /home/ams/speedcubingmadrid.org/prod_conf/ams_https.conf /etc/nginx/
+  /home/aes/speedcubingspain.org/scripts/prod_cert.sh create_cert
+  cp /home/aes/speedcubingspain.org/prod_conf/aes_https.conf /etc/nginx/
   rm /etc/nginx/conf.d/pre_certif.conf
-  cp /home/ams/speedcubingmadrid.org/prod_conf/post_certif.conf /etc/nginx/conf.d/
+  cp /home/aes/speedcubingspain.org/prod_conf/post_certif.conf /etc/nginx/conf.d/
   service nginx restart
 fi
 
 echo "Installing cron scripts"
-cp /home/ams/speedcubingmadrid.org/scripts/cert_nginx /etc/cron.weekly
+cp /home/aes/speedcubingspain.org/scripts/cert_nginx /etc/cron.weekly
 
-echo "Bootstraping as ams"
-su ams -c "cd /home/ams && /home/ams/speedcubingmadrid.org/scripts/ams_bootstrap.sh"
+echo "Bootstraping as aes"
+su aes -c "cd /home/aes && /home/aes/speedcubingspain.org/scripts/aes_bootstrap.sh"

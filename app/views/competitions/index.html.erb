@@ -7,10 +7,9 @@
 <%= render "shared/nav_competitions", current_page: :calendar, title: "Calendario" do %>
   El calendario a continuación contiene los siguientes elementos:
   <ul class="mb-2">
-    <li class="color-green">Competiciones oficiales de la WCA en Madrid</li>
-    <li class="color-orange">Competiciones oficiales de la WCA que se están planeando en Madrid</li>
+    <li class="color-orange">Competiciones oficiales de la WCA que se están planeando</li>
     <li class="color-red">Competiciones oficiales de la WCA en España</li>
-    <li class="color-blue">Eventos de la AMS que no son competiciones</li>
+    <li class="color-blue">Eventos de la AES que no son competiciones</li>
   </ul>
   <p class="mb-3">
     Puedes usar la versión de iCal para agregar este calendario como un calendario externo a tu calendario (nota: sólo las próximas competiciones oficiales de la WCA están incluidas en el calendario de iCal).
@@ -21,7 +20,7 @@
 
   <script>
 $(function() {
-  window.ams.initCalendar(<%= current_user&.can_manage_calendar? %>);
+  window.aes.initCalendar(<%= current_user&.can_manage_calendar? %>);
 });
   </script>
 <% end %>

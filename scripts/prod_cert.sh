@@ -3,7 +3,7 @@
 # /!\ assumed to be executed by root!
 
 create_cert() {
-  certbot certonly --webroot -w /home/ams/speedcubingmadrid.org/public -d www.speedcubingmadrid.org
+  certbot certonly --webroot -w /home/aes/speedcubingspain.org/public -d www.speedcubingspain.org
 }
 
 renew_cert() {

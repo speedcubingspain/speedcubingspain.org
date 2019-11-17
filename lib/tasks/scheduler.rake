@@ -8,20 +8,24 @@ namespace :scheduler do
   task :sync_groups => :environment do
     sync_job_messages = []
     # Mailing list for the Board
-    board_members = User.select(&:board).map(&:ams_email)
-    sync_job_messages << GsuiteMailingLists.sync_group("juntadirectiva@speedcubingmadrid.org", board_members)
+    board_members = User.select(&:board).map(&:email)
+    sync_job_messages << GsuiteMailingLists.sync_group("junta@speedcubingspain.org", board_members)
 
     # Mailing list for the communication team
-    communication_members = User.select(&:communication).map(&:ams_email)
-    sync_job_messages << GsuiteMailingLists.sync_group("comunicacion@speedcubingmadrid.org", communication_members)
+    communication_members = User.select(&:communication).map(&:email)
+    sync_job_messages << GsuiteMailingLists.sync_group("comunicacion@speedcubingspain.org", communication_members)
 
     # Mailing list for the software team
-    software_members = User.select(&:software).map(&:ams_email)
-    sync_job_messages << GsuiteMailingLists.sync_group("software@speedcubingmadrid.org", software_members)
+    software_members = User.select(&:software).map(&:email)
+    sync_job_messages << GsuiteMailingLists.sync_group("software@speedcubingspain.org", software_members)
+
+    # Mailing list for the spanish delegates
+    spanish_delegates = User.select(&:spanish_delegate).map(&:email)
+    sync_job_messages << GsuiteMailingLists.sync_group("delegados@speedcubingspain.org", spanish_delegates)
 
     # Mailing list for automatic notifications to subscribers
-    subscribers_with_notifications = User.subscription_notification_enabled.with_active_subscription.map(&:ams_email)
-    sync_job_messages << GsuiteMailingLists.sync_group("notificaciones-socios@speedcubingmadrid.org", subscribers_with_notifications)
+    subscribers_with_notifications = User.subscription_notification_enabled.with_active_subscription.map(&:email)
+    sync_job_messages << GsuiteMailingLists.sync_group("notificaciones-socios@speedcubingspain.org", subscribers_with_notifications)
 
     message = "Se ha realizado la sincronización de los grupos.\n"
     if sync_job_messages.empty?

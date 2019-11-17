@@ -5,6 +5,7 @@ pull_latest() {
 }
 
 bootstrap_rails() {
+  gem update --system
   gem install bundler
   gem install pg -v '1.0.0'
   bundle install --path=vendor/bundle
@@ -47,7 +48,7 @@ scheduled_jobs() {
   if [ -z ${RAILS_ENV+x} ]; then
     source ~/.bashrc
   fi
-  # This function is added as a daily cron in ams_bootstrap.sh
+  # This function is added as a daily cron in aes_bootstrap.sh
   bin/rails scheduler:sync_groups
   bin/rails scheduler:get_wca_competitions
   bin/rails scheduler:get_wca_persons

@@ -1,12 +1,12 @@
-# `speedcubingmadrid.org`
+# `speedcubingspain.org`
 
-This repository contains the source code that runs on [speedcubingmadrid.org](http://www.speedcubingmadrid.org).
+This repository contains the source code that runs on [speedcubingspain.org](http://www.speedcubingspain.org).
 
 # Functionalities
 
 ## For everyone
 
-  - Calendar of official competitions in Madrid, in Spain, being prepared, and AMS events.
+  - Calendar of official competitions in Spain, being prepared, and AES events.
   - Calendar export on iCal format to add it as an external calendar to your calendar (`/competitions.ics`).
   - Galeries of competitions' photos.
 
@@ -22,7 +22,7 @@ This repository contains the source code that runs on [speedcubingmadrid.org](ht
 
   - Administering competitions to view members with discounts on registration fees, or check new competitors.
 
-## For AMS administrators
+## For AES administrators
 
   - Material management and estimated schedule.
   - Post and tags.
@@ -31,7 +31,7 @@ This repository contains the source code that runs on [speedcubingmadrid.org](ht
 
 # Dependencies and installation
 
-This section and the following are for people wishing to contribute to the **development** of the AMS website.
+This section and the following are for people wishing to contribute to the **development** of the AES website.
 
 The website is based on Rails (and therefore requires Ruby), and is deployed on a VPS.
 The database used is PostgreSQL, which must be installed to run the website locally.
@@ -42,7 +42,7 @@ The dependencies are managed via `bundler`, so the first thing to do is to run `
 The website manages its JavaScript dependencies via Yarn, so you have to install them via `bin/yarn` as well.
 
 Before launching the website, you must create and initialize the database.
-Locally, the configuration is available in `config/database.yml`, and the website expects to be able to use the user `speedcubingmadrid` with the password `fas`.
+Locally, the configuration is available in `config/database.yml`, and the website expects to be able to use the user `speedcubingspain` with the password `fas`.
 It must be created in PostgreSQL and given the rights to create databases.
 
 Once done, the database is initialized via `bin/rails db:setup`. You would also need to run `bin/rake db:reset` to set up test database and then `bin/rake assets:precompile` to compile some assets needed for tests to run.
@@ -54,7 +54,7 @@ Use `bin/rails s` to launch the server. To use it together with the WCA website 
 The authentication on the website is handled using WCA accounts.
 The easiest way to develop locally is to run the WCA website locally (because you can log in like any user).
 In any case you need to create an Oauth application on the instance of the WCA website you are targeting (local, or production), this is [here](https://www.worldcubeassociation.org/oauth/applications) for on the "production" website of the WCA.
-The URL of callback is the page managing the authentication on the site of the AMS, locally it is `http://localhost:1234/wca_callback`.
+The URL of callback is the page managing the authentication on the site of the AES, locally it is `http://localhost:1234/wca_callback`.
 
 Once this is done, it will be necessary to add the id of the application and the secret to the local environment; the website can load environment variables from a `.env` file, so just create a `.env` file at the root of the repository.
 It will contain for example this:
@@ -110,7 +110,7 @@ Via the standard `bin/rails db:migrate`.
 
 ## Production
 
-See the [dedicated wiki page](https://github.com/speedcubingmadrid/speedcubingmadrid.org/wiki/AMS-Production-Server).
+See the [dedicated wiki page](https://github.com/speedcubingspain/speedcubingspain.org/wiki/AES-Production-Server).
 
 ## Sendgrid
 
@@ -143,7 +143,7 @@ G Suite is used to manage the association's mailing lists. They are synced via `
   3. Go to the google developer console, create a new project, add the API "Admin SDK".
   4. Create "credentials" of type oauth, download the JSON and re-name it to `oauth_credentials.json`.
   5. Install [`gcloud`](https://cloud.google.com/sdk/docs/quickstart-debian-ubuntu).
-  6. Authenticate with **the API bot** account of the AMS, by running: `gcloud beta auth application-default login --scopes = 'https: //www.googleapis.com/ auth / admin.directory.group '--client-id-file = oauth_credentials.json`
+  6. Authenticate with **the API bot** account of the AES, by running: `gcloud beta auth application-default login --scopes = 'https: //www.googleapis.com/ auth / admin.directory.group '--client-id-file = oauth_credentials.json`
 
 This should automatically create a JSON file:
 
@@ -151,6 +151,6 @@ This should automatically create a JSON file:
 Credentials saved to file: [/home/apdrf/.config/gcloud/application_default_credentials.json]
 ```
 
-This file must be copied to the root of the project on the production server, renaming it to `credentials.json`. It is loaded by the corresponding library [here](https://github.com/speedcubingmadrid/speedcubingmadrid.org/blob/master/lib/gsuite_mailing_lists.rb#L4).
+This file must be copied to the root of the project on the production server, renaming it to `credentials.json`. It is loaded by the corresponding library [here](https://github.com/speedcubingspain/speedcubingspain.org/blob/master/lib/gsuite_mailing_lists.rb#L4).
 
 If a production server is re-installed, step 6 will need to be repeated.
