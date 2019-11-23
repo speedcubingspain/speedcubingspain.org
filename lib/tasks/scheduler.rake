@@ -101,7 +101,7 @@ namespace :scheduler do
   desc "Daily task to send subscriptions reminder"
   task :send_subscription_reminders => :environment do
     users_to_notify = User.subscription_notification_enabled.select(&:last_active_subscription).select do |u|
-      u.last_active_subscription.until == 2.days.from_now.to_date
+      u.last_active_subscription.until == 1.week.from_now.to_date
     end
     puts "#{users_to_notify.size} usuarios a notificar."
     users_done = []
