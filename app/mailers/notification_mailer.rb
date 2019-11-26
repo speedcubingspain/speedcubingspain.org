@@ -11,7 +11,7 @@ class NotificationMailer < ApplicationMailer
 
   def notify_of_new_competition
     @competition = params[:competition]
-    mail(to: "notificaciones-socios@speedcubingspain.org", subject: "[AES] La competición #{@competition.name} se acaba de anunciar", reply_to: "contacto@speedcubingspain.org")
+    mail(to: "notificaciones-socios@speedcubingspain.org", subject: "[AES] - #{@competition.name}", reply_to: "contacto@speedcubingspain.org")
   end
 
   def notify_team_of_failed_job
