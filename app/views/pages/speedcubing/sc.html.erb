@@ -1,12 +1,212 @@
 <% provide(:title, "Campeonato de España") %>
 <% provide(:active_section, "speedcubing") %>
-
 <%= render "shared/nav_competitions", current_page: :sc, title: "Campeonato de España" do %>
 
-  <h3 id="Edición-2019">Edición de 2019</h3>
-  <p>La edición de 2019 del Campeonato de España de Speedcubing se celebró en Albacete.</p>
+  <h3 id="Edición-2019">Edición de 2020</h3>
+  <p>¡Os presentamos el Campeonato Nacional Online de Speedcubing 2020!</p>
+  <p>El evento contará con la gran mayoría de las categorías oficiales de la WCA y se desarrollará a lo largo de septiembre, siendo las finales en el puente de la Hispanidad en octubre. Este evento lo han organizado la Asociación Española de Speedcubing y la <a href="https://www.speedcubingmadrid.org">Asociación Madrileña de Speedcubing</a>, cuya candidatura fue la ganadora del cancelado Campeonato de España 2020.</p>
+  <p><i><b>IMPORTANTE</b>: No es un competición oficial WCA, por lo que los tiempos realizados no contarán para el ranking de la WCA. Sin embargo, se considerará popularmente al ganador de cada categoría como el ganador de España de este año.</i></p>
+
+  <h4 ide="¿Cómo puedo apuntarme?">¿Cómo puedo apuntarme?</h4>
+  <p>Para registrarte, solo tendrás que rellenar el <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZqy7epQPzrMR_vOGhLudahaMJIq7wHVn-u3-XPPbFm9w4Tw/viewform">formulario de inscripción</a>.</p>
+
+  <h4 ide="Participantes">Participantes</h4>
+  <p><a href="https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vQMxTeV43sf7ArtKXTf4G3ipV6ZNbbOcW4-b8WigVAjEOh5kx6NWR8S2grcIHIzMwPNpQsBWE8NbhKc/pubhtml?gid=361444493&single=true&urp=gmail_link">Aquí</a> podéis ver a todos los participantes del campeonato.</p>
+
+  <h4 ide="Eventos y Rondas">Eventos y Rondas</h4>
+  <p>Habrá 5 jornadas de clasificación a lo largo de septiembre, las cuales determinarán los clasificados para los <i>play offs</i> que se celebrarán el 3-4 de octubre, siendo las finales el 10 y 11 de octubre.</p>
+
+  <h4 ide="Jornadas">Jornadas</h4>
+  <p>Las jornadas serán de lunes a sábado (observése el calendario más abajo). A comienzos de la jornada recibiréis un formulario por cada categoría a la que os hayáis inscrito, el cual deberéis rellenar con vuestros resultados antes del final de la jornada.</p>
+  <p>Para evitar irregularidades, cada formulario vendrá con un tiempo límite, es decir, una vez abierto, deberéis rellenar y enviar el formulario antes del tiempo límite. Además, deberéis grabar vuestras resoluciones mostrando en el video como abrís y enviáis el formulario, así como vuestros resultados. Estos videos solo se pedirán a aquellos que se clasifiquen para los <i>play offs</i>. Si no tenéis vídeo acreditativo de todas la jornadas no podréis clasificaros, así que aseguraos de grabarlos y guardarlos correctamente.</p>
+  <p>Para cronometrarse, deberéis usar un cronómetro Speed Stacks Stackmat timer®️ (G2, G3 o G4) para realizar las resoluciones, respetando en todo momento las penalizaciones de la WCA propias de las competiciones oficiales (véase el <a href="https://www.worldcubeassociation.org/regulations/">Reglamento de la WCA</a>). En caso de no tener ningún Speed Stacks Stackmat timer, se podrá permitir el uso de teclado, siempre y cuando consideremos que no se está realizando ninguna ventaja, en dicho caso, se podrá optar por la descalificación.</p>
+  <p>La puntuación de cada jornada se obtendrá de manera parecida al <i>Kinchrank</i>, con puntos extra para los mejor clasificados. En concreto, se calcularán de la siguiente manera:</p>
+  <p>$$ \text{Puntuación} = \left(\dfrac{\text{Mejor resultado de la jornada}}{\text{Tu resultado}} \times 100 \right) + \text{Bonus point} $$</p>
+  <p><i>Nota: el resultado estará truncado al número entero inferior.</i></p>
+
+  <div id="points-summary-table" class="table table-responsive">
+    <% headers = ["Posición", "Bonus Points"] %>
+    <%= render "shared/compact_table", headers: headers do %>
+      <tr> <td>1ª</td> <td>25</td> </tr>
+      <tr> <td>2ª</td> <td>18</td> </tr>
+      <tr> <td>3ª</td> <td>15</td> </tr>
+      <tr> <td>4ª</td> <td>12</td> </tr>
+      <tr> <td>5ª</td> <td>10</td> </tr>
+      <tr> <td>6ª</td> <td>8</td> </tr>
+      <tr> <td>7ª</td> <td>6</td> </tr>
+      <tr> <td>8ª</td> <td>5</td> </tr>
+      <tr> <td>9ª</td> <td>4</td> </tr>
+      <tr> <td>10ª</td> <td>3</td> </tr>
+      <tr> <td>11ª</td> <td>2</td> </tr>
+      <tr> <td>12ª</td> <td>1</td> </tr>
+    <% end %>
+  </div>
+
+  <p>Los puntos obtenidos en cada jornada se sumarán a los obtenidos en jornadas anteriores, los cuales se mostrarán en la clasificación general. Quienes obtengan mayor puntuación en la clasificación general al final de la última jornada serán clasificados para los <i>play offs</i>.</p>
+  <p>Los resultados de cada jornada se publicarán al final de la misma.</p>
+
+  <h4 ide="Clasificación jornadas">Clasificación jornadas</h4>
+  <p>Aquí se subirán los enlaces de las diferentes Jornadas cuando finalicen:
+    <ul>
+      <li>Jornada 1:</li>
+      <li>Jornada 2:</li>
+      <li>Jornada 3:</li>
+      <li>Jornada 4:</li>
+      <li>Jornada 5:</li>
+    </ul>
+  </p>
+
+  <h4 ide="Play offs"><i>Play offs</i></h4>
+  <p>La mayoría de categorías finalizarán con <i>play offs</i> (ovservése el cuadro de Categorías).</p>
+  <p>Los mejores clasificados en las jornadas competirán entre sí, en rondas cara a cara. Por cada batalla obtendréis una puntuación y el que llegue a un determinado número de puntos ganará y pasará a la siguiente ronda.</p>
+  <p>Cada ronda clasificatoria se dividirá en varias batallas. Cada batalla consistirá en 5 resoluciones, con las cuales obtendrás puntuación de la siguiente manera:
+    <ul>
+      <li>Habiendo hecho el mejor single de la batalla: 1 Punto.</li>
+      <li>Habiendo hecho la mejor media: 2 Puntos.</li>
+      <li>Si ganas todos los tiempos: 1 Punto.</li>
+    </ul>
+  Se aplican las siguientes excepciones:</p>
+    <ul>
+      <li>Para la categoría de 3x3x3 Blindfolded se realizarán batallas a un solo tiempo, donde el ganador conseguirá un punto, y en caso de empate, cada competidor obtendrá 0,5 puntos.</li>
+      <li>Para 3x3x3 Fewest Moves, se mandará una mezcla el día 5 de Octubre, teniendo hasta el 9 para resolverla y mandar su solución.</li>
+    </ul>
+
+  <h4 ide="Categorías">Categorías</h4>
+  <p>Aquí os dejamos una tabla con todas las categorías a las que os podréis presentar, con los tiempos límite para enviar los formularios y los puntos necesarios en cada <i>play off</i>, así como el número de clasificados:</p>
+  <p><i><b>IMPORTANTE</b>: si crees que superas el tiempo límite para cada jornada (mezclar + resolver todas las resoluciones), no te apuntes.</i></p>
+
+  <div id="events-summary-table" class="table table-responsive">
+    <% headers = ["Categoría", "Tiempo límite jornadas", "Clasificados para play offs", "Puntuación en cuartos", "Puntuación en semifinales", "Puntuación en finales"] %>
+    <%= render "shared/compact_table", headers: headers do %>
+      <tr>
+        <td>3x3x3 Cube</td>
+        <td>10min</td>
+        <td>8</td>
+        <td>10</td>
+        <td>12</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>2x2x2 Cube</td>
+        <td>10min</td>
+        <td>8</td>
+        <td>10</td>
+        <td>12</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>4x4x4 Cube</td>
+        <td>15min</td>
+        <td>4</td>
+        <td>**</td>
+        <td>6</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>5x5x5 Cube</td>
+        <td>20min</td>
+        <td>4</td>
+        <td>**</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>6x6x6 Cube</td>
+        <td>20min</td>
+        <td>*</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td>7x7x7 Cube</td>
+        <td>25min</td>
+        <td>*</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td>3x3x3 Blindfolded</td>
+        <td>25min</td>
+        <td>4</td>
+        <td>**</td>
+        <td>5</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>3x3x3 Fewest Moves</td>
+        <td>60min</td>
+        <td>8</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td>3x3x3 One-Handed</td>
+        <td>15min</td>
+        <td>8</td>
+        <td>8</td>
+        <td>10</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td>Megaminx</td>
+        <td>25min</td>
+        <td>*</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td>Pyraminx</td>
+        <td>10min</td>
+        <td>8</td>
+        <td>10</td>
+        <td>12</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>Skewb</td>
+        <td>10min</td>
+        <td>8</td>
+        <td>10</td>
+        <td>12</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>Square-1</td>
+        <td>15min</td>
+        <td>4</td>
+        <td>**</td>
+        <td>10</td>
+        <td>12</td>
+       </tr>
+    <% end %>
+  </div>
+
+  <p><i>* No habrá <u>play offs</u> para esta categoría. El podio se obtendrá a través de las Jornadas.</i></p>
+  <p><i>** No habrá Cuartos de Final para esta categoría.</i></p>
+
+  <h4 ide="Calendario">Calendario</h4>
+  <p>Aquí se muestra la programación de la competición, así como el horario de los <i>play offs</i>:
+    <ul>
+      <li>Registro: del 19 al 29 de agosto.</li>
+      <li>Jornada 1: del 31 de agosto al 5 de septiembre.</li>
+      <li>Jornada 2: del 7 al 12 de septiembre.</li>
+      <li>Jornada 3: del 14 al 19 de septiembre.</li>
+      <li>Jornada 4: del 21 al 26 de septiembre.</li>
+      <li>Jornada 5: del 28 de septiembre al 1 de octubre.</li>
+      <li>Octavos, cuartos y semifinales: 5-6 de octubre *.</li>
+      <li>Finales: 10-11 de octubre *.</li>
+    </ul>
+  <i>* El horario de los <u>play offs</u>, se mostrará próximamente.</i></p>
+  <p>¡Estad atentos para más novedades acerca del campeonato!</p>
 
   <h3 id="pasadas-ediciones">Pasadas ediciones</h3>
   <p>Para obtener información sobre pasadas ediciones, dirígete a <a href="/speedcubing/sc_historical/">esta página</a>.</p>
 
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+  </script>
 <% end %>
