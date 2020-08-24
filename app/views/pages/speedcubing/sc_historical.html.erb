@@ -3,6 +3,379 @@
 <%= render "shared/nav_competitions", current_page: :sc, title: "Histórico de Campeonatos de España" do %>
 
   <h3 id="Edición-2019">Edición de 2019</h3>
-  <p>La edición de 2019 del Campeonato de España de Speedcubing se celebró en Albacete.</p>
+  <p>La edición de 2019 del Campeonato de España de Speedcubing se celebró en Albacete, los días 11, 12 y 13 de octubre. Tuvo un total de 112 competidores y 18 categorías.</p>
+  <p>Aquí puedes ver todos los <a href="https://www.worldcubeassociation.org/competitions/SpanishChampionship2019">resultados</a> de cada categoría.</p>
 
+  <div id="historical-podiums" class="table table-responsive">
+    <% headers = ["Categoría", "Campeón", "Single", "Media"] %>
+    <%= render "shared/compact_table", headers: headers do %>
+      <tr> <td>3x3x3</td> <td>Biel Salmons González</td> <td>7.33</td> <td>8.05</td> </tr>
+      <tr> <td>2x2x2</td> <td>Marcos Aparicio Caro</td> <td>1.80</td> <td>2.03</td> </tr>
+      <tr> <td>4x4x4</td> <td>Eder Olivencia González</td> <td>28.61</td> <td>29.95</td> </tr>
+      <tr> <td>5x5x5</td> <td>Marcos Aparicio Caro</td> <td>56.53</td> <td>57.35</td> </tr>
+      <tr> <td>6x6x6</td> <td>Carlos Tapp</td> <td>1:42.35</td> <td>1:48.36</td> </tr>
+      <tr> <td>7x7x7</td> <td>Carlos Tapp</td> <td>2:13.74</td> <td>2:26.06</td> </tr>
+      <tr> <td>3x3x3 Blindfolded</td> <td>José Antonio Navarro Sánchez</td> <td>29.85</td> <td>DNF</td> </tr>
+      <tr> <td>3x3x3 Fewest Moves</td> <td>Carlos Méndez García-Barroso</td> <td>24</td> <td>27.00 NR</td> </tr>
+      <tr> <td>3x3 One-Handed</td> <td>Marcos Aparicio Caro</td> <td>13.08</td> <td>13.99</td> </tr>
+      <tr> <td>Clock</td> <td>Jaime Calzado Gómez</td> <td>8.27</td> <td>8.64</td> </tr>
+      <tr> <td>Megaminx</td> <td>Eder Olivencia González</td> <td>45.22</td> <td>49.67</td> </tr>
+      <tr> <td>Pyraminx</td> <td>Héctor Haro Guerrero</td> <td>2.43</td> <td>3.19</td> </tr>
+      <tr> <td>Skewb</td> <td>Carlos Méndez García-Barroso</td> <td>1.95</td> <td>3.00</td> </tr>
+      <tr> <td>Square-1</td> <td>Javier López Fernández</td> <td>9.96</td> <td>11.89</td> </tr>
+      <tr> <td>4x4x4 Blindfolded</td> <td>José Antonio Navarro Sánchez</td> <td>4:58.07</td> <td>DNF</td> </tr>
+      <tr> <td>5x5x5 Blindfolded</td> <td>José Antonio Navarro Sánchez</td> <td>8:19.06 NR</td> <td>DNF</td> </tr>
+      <tr> <td>3x3x3 Multi-Blind</td> <td>José Antonio Navarro Sánchez</td> <td>24/28 58:48</td> <td> </td> </tr>
+      <tr> <td>3x3x3 With Feet</td> <td>Julen Simón Iriarte</td> <td>31.81</td> <td>38.01</td> </tr>
+    <% end %>
+  </div>
+
+  <h3 id="Edición-2018">Edición de 2018</h3>
+  <p>La edición de 2018 del Campeonato de España de Speedcubing se celebró en Pamplona, los días 12, 13 y 14 de octubre. Tuvo un total de 141 competidores y 18 categorías.</p>
+  <p>Aquí puedes ver todos los <a href="https://www.worldcubeassociation.org/competitions/Spain2018">resultados</a> de cada categoría.</p>
+
+  <div id="historical-podiums" class="table table-responsive">
+    <% headers = ["Categoría", "Campeón", "Single", "Media"] %>
+    <%= render "shared/compact_table", headers: headers do %>
+      <tr> <td>3x3x3</td> <td>Carlos Méndez García-Barroso</td> <td>7.63</td> <td>8.46</td> </tr>
+      <tr> <td>2x2x2</td> <td>Julen Simón Iriarte</td> <td>1.76</td> <td>2.33</td> </tr>
+      <tr> <td>4x4x4</td> <td>Eder Olivencia González</td> <td>28.46</td> <td>31.34</td> </tr>
+      <tr> <td>5x5x5</td> <td>Eder Olivencia González</td> <td>56.93</td> <td>1:02.60</td> </tr>
+      <tr> <td>6x6x6</td> <td>Carlos Tapp</td> <td>1:38.14 NR</td> <td>1:49.99 NR</td> </tr>
+      <tr> <td>7x7x7</td> <td>Antonio López</td> <td>2:20.59 NR</td> <td>2:23.03 NR</td> </tr>
+      <tr> <td>3x3x3 Blindfolded</td> <td>Berta García Parra</td> <td>23.98</td> <td>DNF</td> </tr>
+      <tr> <td>3x3x3 Fewest Moves</td> <td>Alexander Olleta del Molino</td> <td>23</td> <td>29.00</td> </tr>
+      <tr> <td>3x3 One-Handed</td> <td>Carlos Méndez García-Barroso</td> <td>12.31</td> <td>13.72</td> </tr>
+      <tr> <td>Clock</td> <td>Raúl Serrano Martínez</td> <td>6.48</td> <td>8.97</td> </tr>
+      <tr> <td>Megaminx</td> <td>Jorge Marín Segovia</td> <td>51.40</td> <td>59.02</td> </tr>
+      <tr> <td>Pyraminx</td> <td>Manuel Prieto de Antón</td> <td>3.16</td> <td>3.58</td> </tr>
+      <tr> <td>Skewb</td> <td>Manuel Prieto de Antón</td> <td>2.65</td> <td>3.60</td> </tr>
+      <tr> <td>Square-1</td> <td>Daniel Gracia Ortiz</td> <td>9.82</td> <td>12.70</td> </tr>
+      <tr> <td>4x4x4 Blindfolded</td> <td>José Antonio Navarro Sánchez</td> <td>4:05.44</td> <td>DNF</td> </tr>
+      <tr> <td>5x5x5 Blindfolded</td> <td>José Antonio Navarro Sánchez</td> <td>11:38.00 NR</td> <td>DNF</td> </tr>
+      <tr> <td>3x3x3 Multi-Blind</td> <td>Berta García Parra</td> <td>32/33 59:11 NR</td> <td> </td> </tr>
+      <tr> <td>3x3x3 With Feet</td> <td>José Antonio Navarro Sánchez</td> <td>37.34</td> <td>40.56</td> </tr>
+    <% end %>
+  </div>
+
+  <h3 id="Edición-2017">Edición de 2017</h3>
+  <p>La edición de 2017 del Campeonato de España de Speedcubing se celebró en Valencia, los días 13, 14 y 15 de octubre. Tuvo un total de 209 competidores y 18 categorías.</p>
+  <p>Aquí puedes ver todos los <a href="https://www.worldcubeassociation.org/competitions/SpanishChampionship2017">resultados</a> de cada categoría.</p>
+
+  <div id="historical-podiums" class="table table-responsive">
+    <% headers = ["Categoría", "Campeón", "Single", "Media"] %>
+    <%= render "shared/compact_table", headers: headers do %>
+      <tr> <td>3x3x3</td> <td>Carlos Méndez García-Barroso</td> <td>7.74</td> <td>9.40</td> </tr>
+      <tr> <td>2x2x2</td> <td>Carlos Méndez García-Barroso</td> <td>1.53</td> <td>2.43</td> </tr>
+      <tr> <td>4x4x4</td> <td>Darío Roa Sánchez</td> <td>28.00</td> <td>29.10</td> </tr>
+      <tr> <td>5x5x5</td> <td>Antonio López</td> <td>1:05.03</td> <td>1:07.96</td> </tr>
+      <tr> <td>6x6x6</td> <td>Antonio López</td> <td>1:58.21</td> <td>1:59.57 NR</td> </tr>
+      <tr> <td>7x7x7</td> <td>Antonio López</td> <td>2:41.91</td> <td>2:43.69 NR</td> </tr>
+      <tr> <td>3x3x3 Blindfolded</td> <td>Berta García Parra</td> <td>23.69</td> <td>DNF</td> </tr>
+      <tr> <td>3x3x3 Fewest Moves</td> <td>Eki González García</td> <td>31</td> <td>32.00</td> </tr>
+      <tr> <td>3x3 One-Handed</td> <td>Darío Roa Sánchez</td> <td>14.28</td> <td>15.81</td> </tr>
+      <tr> <td>Clock</td> <td>Ernersto Fernández Regueira</td> <td>9.09</td> <td>9.69</td> </tr>
+      <tr> <td>Megaminx</td> <td>Manuel Prieto de Antón</td> <td>50.48 NR</td> <td>54.56 NR</td> </tr>
+      <tr> <td>Pyraminx</td> <td>José María García Carrión</td> <td>3.11</td> <td>3.62</td> </tr>
+      <tr> <td>Skewb</td> <td>Julio Perugorria Lorente</td> <td>2.41</td> <td>3.45</td> </tr>
+      <tr> <td>Square-1</td> <td>Daniel Gracia Ortiz</td> <td>10.45</td> <td>12.80</td> </tr>
+      <tr> <td>4x4x4 Blindfolded</td> <td>Berta García Parra</td> <td>6:02.24</td> <td>DNF</td> </tr>
+      <tr> <td>5x5x5 Blindfolded</td> <td>Javier Hernández Requena</td> <td>33:25.00</td> <td>DNF</td> </tr>
+      <tr> <td>3x3x3 Multi-Blind</td> <td>Berta García Parra</td> <td>23/24 57:58</td> <td> </td> </tr>
+      <tr> <td>3x3x3 With Feet</td> <td>José Antonio Navarro Sánchez</td> <td>51.07</td> <td>54.32 NR</td> </tr>
+    <% end %>
+  </div>
+
+  <h3 id="Edición-2016">Edición de 2016</h3>
+  <p>La edición de 2016 del Campeonato de España de Speedcubing se celebró en Sevilla, los días 7, 8 y 9 de octubre. Tuvo un total de 122 competidores y 17 categorías.</p>
+  <p>Aquí puedes ver todos los <a href="https://www.worldcubeassociation.org/competitions/SpanishChampionship2016">resultados</a> de cada categoría.</p>
+
+  <div id="historical-podiums" class="table table-responsive">
+    <% headers = ["Categoría", "Campeón", "Single", "Media"] %>
+    <%= render "shared/compact_table", headers: headers do %>
+      <tr> <td>3x3x3</td> <td>Darío Roa Sánchez</td> <td>6.17</td> <td>7.83</td> </tr>
+      <tr> <td>2x2x2</td> <td>Carlos Méndez García-Barroso</td> <td>1.73</td> <td>2.07</td> </tr>
+      <tr> <td>4x4x4</td> <td>Darío Roa Sánchez</td> <td>24.43 NR</td> <td>31.28</td> </tr>
+      <tr> <td>5x5x5</td> <td>Darío Roa Sánchez</td> <td>57.68</td> <td>1:10.68</td> </tr>
+      <tr> <td>6x6x6</td> <td>Carlos Tapp</td> <td>2:09.72</td> <td>2:12.18</td> </tr>
+      <tr> <td>7x7x7</td> <td>Carlos Tapp</td> <td>3:00.56</td> <td>3:09.47</td> </tr>
+      <tr> <td>3x3x3 Blindfolded</td> <td>Berta García Parra</td> <td>44.32</td> <td>DNF</td> </tr>
+      <tr> <td>3x3x3 Fewest Moves</td> <td>Alexander Olleta del Molino</td> <td>31</td> <td>32.67</td> </tr>
+      <tr> <td>3x3 One-Handed</td> <td>Darío Roa Sánchez</td> <td>12.78</td> <td>14.32 NR</td> </tr>
+      <tr> <td>Clock</td> <td>Ernesto Fernández Regueira</td> <td>7.29</td> <td>9.11</td> </tr>
+      <tr> <td>Megaminx</td> <td>Antonio López</td> <td>58.25</td> <td>1:03.78 NR</td> </tr>
+      <tr> <td>Pyraminx</td> <td>Gonzalo Orellana Barrasa</td> <td>4.04</td> <td>4.76</td> </tr>
+      <tr> <td>Skewb</td> <td>Manuel Prieto de Antón</td> <td>4.55</td> <td>5.05</td> </tr>
+      <tr> <td>Square-1</td> <td>Daniel Gracia Ortiz</td> <td>11.72</td> <td>12.34 NR</td> </tr>
+      <tr> <td>4x4x4 Blindfolded</td> <td>Rodrigo Pueblas Núñez</td> <td>6:53.00</td> <td>DNF</td> </tr>
+      <tr> <td>3x3x3 Multi-Blind</td> <td>Berta García Parra</td> <td>16/16 54:02 NR</td> <td> </td> </tr>
+      <tr> <td>3x3x3 With Feet</td> <td>Alberto Pérez de Rada Fiol</td> <td>51.07</td> <td>55.90</td> </tr>
+    <% end %>
+  </div>
+
+  <h3 id="Edición-2015">Edición de 2015</h3>
+  <p>La edición de 2015 del Campeonato de España de Speedcubing se celebró en Granada, los días 9, 10 y 11 de octubre. Tuvo un total de 108 competidores y 18 categorías.</p>
+  <p>Aquí puedes ver todos los <a href="https://www.worldcubeassociation.org/competitions/SpanishChampionship2015">resultados</a> de cada categoría.</p>
+
+  <div id="historical-podiums" class="table table-responsive">
+    <% headers = ["Categoría", "Campeón", "Single", "Media"] %>
+    <%= render "shared/compact_table", headers: headers do %>
+      <tr> <td>3x3x3</td> <td>Carlos Méndez García-Barroso</td> <td>8.70</td> <td>9.61</td> </tr>
+      <tr> <td>2x2x2</td> <td>Carlos Méndez García-Barroso</td> <td>1.88</td> <td>2.43</td> </tr>
+      <tr> <td>4x4x4</td> <td>Darío Roa Sánchez</td> <td>25.63 NR</td> <td>34.13</td> </tr>
+      <tr> <td>5x5x5</td> <td>Darío Roa Sánchez</td> <td>1:04.67</td> <td>1:10.62</td> </tr>
+      <tr> <td>6x6x6</td> <td>Carlos Tapp</td> <td>2:20.61.</td> <td>2:31.51 NR</td> </tr>
+      <tr> <td>7x7x7</td> <td>Jorge Castillo Matas</td> <td>3:32.39</td> <td>3:40.05</td> </tr>
+      <tr> <td>3x3x3 Blindfolded</td> <td>Asier Cardoso Sánchez</td> <td>58.00</td> <td>DNF</td> </tr>
+      <tr> <td>3x3x3 Fewest Moves</td> <td>Javier Cabezuelo Sánchez</td> <td>29</td> <td>31.00</td> </tr>
+      <tr> <td>3x3 One-Handed</td> <td>Darío Roa Sánchez</td> <td>15.62</td> <td>17.62</td> </tr>
+      <tr> <td>Clock</td> <td>Ernesto Fernández Regueira</td> <td>8.52</td> <td>9.28</td> </tr>
+      <tr> <td>Megaminx</td> <td>Antonio López</td> <td>59.45</td> <td>1:07.94</td> </tr>
+      <tr> <td>Pyraminx</td> <td>Alberto Pérez de Rada Fiol</td> <td>4.49</td> <td>5.09</td> </tr>
+      <tr> <td>Skewb</td> <td>Eki González García</td> <td>2.91</td> <td>4.57 NR</td> </tr>
+      <tr> <td>Square-1</td> <td>Daniel Gracia Ortiz</td> <td>20.51</td> <td>21.04</td> </tr>
+      <tr> <td>4x4x4 Blindfolded</td> <td>Rodrigo Pueblas Núñez</td> <td>9:10.63</td> <td> </td> </tr>
+      <tr> <td>5x5x5 Blindfolded</td> <td>Javier Hernández Requena</td> <td>42:10.00</td> <td> </td> </tr>
+      <tr> <td>3x3x3 Multi-Blind</td> <td>Berta García Parra</td> <td>11/12 53:41 NR</td> <td> </td> </tr>
+      <tr> <td>3x3x3 With Feet</td> <td>Alberto Pérez de Rada Fiol</td> <td>1:06.66</td> <td>1:10.71</td> </tr>
+    <% end %>
+  </div>
+
+  <h3 id="Edición-2014">Edición de 2014</h3>
+  <p>La edición de 2014 del Campeonato de España de Speedcubing se celebró en Madrid, los días 26, 27 y 28 de septiembre. Tuvo un total de 151 competidores y 18 categorías.</p>
+  <p>Aquí puedes ver todos los <a href="https://www.worldcubeassociation.org/competitions/SpanishChampionship2014">resultados</a> de cada categoría.</p>
+
+  <div id="historical-podiums" class="table table-responsive">
+    <% headers = ["Categoría", "Campeón", "Single", "Media"] %>
+    <%= render "shared/compact_table", headers: headers do %>
+      <tr> <td>3x3x3</td> <td>Darío Roa Sánchez</td> <td>7.75</td> <td>8.48 NR</td> </tr>
+      <tr> <td>2x2x2</td> <td>Carlos Méndez García-Barroso</td> <td>1.70</td> <td>2.47</td> </tr>
+      <tr> <td>4x4x4</td> <td>Darío Roa Sánchez</td> <td>35.88</td> <td>37.07</td> </tr>
+      <tr> <td>5x5x5</td> <td>Darío Roa Sánchez</td> <td>1:02.83</td> <td>1:07.27 NR</td> </tr>
+      <tr> <td>6x6x6</td> <td>Darío Roa Sánchez</td> <td>2:35.50</td> <td>2:45.66</td> </tr>
+      <tr> <td>7x7x7</td> <td>Jorge Castillo Matas</td> <td>3:34.96 NR</td> <td>3:57.38 NR</td> </tr>
+      <tr> <td>3x3x3 Blindfolded</td> <td>Alexander Olleta del Molino</td> <td>1:27.66</td> <td>DNF</td> </tr>
+      <tr> <td>3x3x3 Fewest Moves</td> <td>Javier Cabezuelo Sánchez</td> <td>26</td> <td>27.00 NR</td> </tr>
+      <tr> <td>3x3 One-Handed</td> <td>Darío Roa Sánchez</td> <td>14.29</td> <td>15.41</td> </tr>
+      <tr> <td>Clock</td> <td>Javier Tirado Ortiz</td> <td>8.08</td> <td>9.33</td> </tr>
+      <tr> <td>Megaminx</td> <td>Darío Roa Sánchez</td> <td>1:12.33</td> <td>1:22.64</td> </tr>
+      <tr> <td>Pyraminx</td> <td>Jorge Castillo Matas</td> <td>5.07</td> <td>5.68</td> </tr>
+      <tr> <td>Skewb</td> <td>Daniel Gracia Ortiz</td> <td>3.35</td> <td>6.09 NR</td> </tr>
+      <tr> <td>Square-1</td> <td>Daniel Gracia Ortiz</td> <td>18.38</td> <td>21.63</td> </tr>
+      <tr> <td>4x4x4 Blindfolded</td> <td>Javier Tirado Ortiz</td> <td>12:19.00</td> <td> </td> </tr>
+      <tr> <td>5x5x5 Blindfolded</td> <td>Javier Tirado Ortiz</td> <td>34:57.00</td> <td> </td> </tr>
+      <tr> <td>3x3x3 Multi-Blind</td> <td>Asier Cardoso Sánchez</td> <td>9/9 49:57 NR</td> <td> </td> </tr>
+      <tr> <td>3x3x3 With Feet</td> <td>Alberto Pérez de Rada Fiol</td> <td>1:31.90</td> <td>1:36.81</td> </tr>
+    <% end %>
+  </div>
+
+  <h3 id="Edición-2013">Edición de 2013</h3>
+  <p>La edición de 2013 del Campeonato de España de Speedcubing se celebró en Madrid, los días 11, 12 y 14 de octubre. Tuvo un total de 109 competidores y 17 categorías.</p>
+  <p>Aquí puedes ver todos los <a href="https://www.worldcubeassociation.org/competitions/SpanishChampionships2013">resultados</a> de cada categoría.</p>
+
+  <div id="historical-podiums" class="table table-responsive">
+    <% headers = ["Categoría", "Campeón", "Single", "Media"] %>
+    <%= render "shared/compact_table", headers: headers do %>
+      <tr> <td>3x3x3</td> <td>Darío Roa Sánchez</td> <td>8.43</td> <td>9.41</td> </tr>
+      <tr> <td>2x2x2</td> <td>Carlos Méndez García-Barroso</td> <td>2.19</td> <td>3.02</td> </tr>
+      <tr> <td>4x4x4</td> <td>Carlos Méndez García-Barroso</td> <td>38.16</td> <td>43.30</td> </tr>
+      <tr> <td>5x5x5</td> <td>Pablo Aguilar Domínguez</td> <td>1:18.69</td> <td>1:23.47</td> </tr>
+      <tr> <td>6x6x6</td> <td>Jorge Castillo Matas</td> <td>2:43.90</td> <td>2:46.94</td> </tr>
+      <tr> <td>7x7x7</td> <td>Guillermo Conde Gil</td> <td>4:04.18</td> <td>4:23.09</td> </tr>
+      <tr> <td>3x3x3 Blindfolded</td> <td>Jorge Castillo Matas</td> <td>52.33</td> <td>DNF</td> </tr>
+      <tr> <td>3x3x3 Fewest Moves</td> <td>Javier Cabezuelo Sánchez</td> <td>24 NR</td> <td> </td> </tr>
+      <tr> <td>3x3 One-Handed</td> <td>Darío Roa Sánchez</td> <td>15.96</td> <td>16.97</td> </tr>
+      <tr> <td>Clock</td> <td>Ernersto Fernández Regueira</td> <td>7.61</td> <td>8.18</td> </tr>
+      <tr> <td>Megaminx</td> <td>Darío Roa Sánchez</td> <td>1:13.00</td> <td>1:20.28 NR</td> </tr>
+      <tr> <td>Pyraminx</td> <td>Alberto Pérez de Rada Fiol</td> <td>5.38</td> <td>5.94</td> </tr>
+      <tr> <td>Square-1</td> <td>Daniel Gracia Ortiz</td> <td>17.25</td> <td>22.94</td> </tr>
+      <tr> <td>4x4x4 Blindfolded</td> <td>Blai Solernou López</td> <td>12:36.00 NR</td> <td> </td> </tr>
+      <tr> <td>5x5x5 Blindfolded</td> <td>Diego Millán Otón</td> <td>53:17.00 NR</td> <td></td> </tr>
+      <tr> <td>3x3x3 Multi-Blind</td> <td>Carlos Méndez García-Barroso</td> <td>7/9 42:53</td> <td> </td> </tr>
+      <tr> <td>3x3x3 With Feet</td> <td>Alexander Olleta del Molino</td> <td>1:29.69</td> <td>1:40.76</td> </tr>
+    <% end %>
+  </div>
+
+  <h3 id="Edición-2012">Edición de 2012</h3>
+  <p>La edición de 2012 del Campeonato de España de Speedcubing se celebró en Granada, los días 14, 15 y 16 de diciembre. Tuvo un total de 51 competidores y 16 categorías.</p>
+  <p>Aquí puedes ver todos los <a href="https://www.worldcubeassociation.org/competitions/SpanishChampionship2012">resultados</a> de cada categoría.</p>
+
+  <div id="historical-podiums" class="table table-responsive">
+    <% headers = ["Categoría", "Campeón", "Single", "Media"] %>
+    <%= render "shared/compact_table", headers: headers do %>
+      <tr> <td>3x3x3</td> <td>Carlos Méndez García-Barroso</td> <td>7.90</td> <td>10.12</td> </tr>
+      <tr> <td>2x2x2</td> <td>Carlos Méndez García-Barroso</td> <td>2.18</td> <td>2.54 NR</td> </tr>
+      <tr> <td>4x4x4</td> <td>Darío Roa Sánchez</td> <td>40.16</td> <td>43.39</td> </tr>
+      <tr> <td>5x5x5</td> <td>Darío Roa Sánchez</td> <td>1:17.77</td> <td>1:23.02</td> </tr>
+      <tr> <td>6x6x6</td> <td>Pablo Aguilar Domínguez</td> <td>2:40.34</td> <td>2:44.49 NR</td> </tr>
+      <tr> <td>7x7x7</td> <td>Pablo Aguilar Domínguez</td> <td>4:16.30 NR</td> <td>4:25.45 NR</td> </tr>
+      <tr> <td>3x3x3 Blindfolded</td> <td>Lucas Benito Rolando</td> <td>58.44</td> <td>DNF</td> </tr>
+      <tr> <td>3x3x3 Fewest Moves</td> <td>Alexander Olleta del Molino</td> <td>31</td> <td>DNF</td> </tr>
+      <tr> <td>3x3 One-Handed</td> <td>Pablo Aguilar Domínguez</td> <td>16.33</td> <td>17.66</td> </tr>
+      <tr> <td>Clock</td> <td>Javier Tirado Ortiz</td> <td>6.69</td> <td>8.84</td> </tr>
+      <tr> <td>Megaminx</td> <td>Carlos Méndez García-Barroso</td> <td>1:20.90</td> <td>1:26.06</td> </tr>
+      <tr> <td>Pyraminx</td> <td>Jorge Castillo Matas</td> <td>3.94</td> <td>5.02 NR</td> </tr>
+      <tr> <td>Square-1</td> <td>Carlos Méndez García-Barroso</td> <td>17.09</td> <td>22.84</td> </tr>
+      <tr> <td>3x3x3 Multi-Blind</td> <td>Ángel de Jaén Gotarredona</td> <td>8/8 58:53 NR</td> <td> </td> </tr>
+      <tr> <td>Magic</td> <td>Ismael García Salgado</td> <td>1.18</td> <td>1.38</td> </tr>
+      <tr> <td>Master Magic</td> <td>Carlos Méndez García-Barroso</td> <td>2.72</td> <td>3.10</td> </tr>
+    <% end %>
+  </div>
+
+  <h3 id="Edición-2011">Edición de 2011</h3>
+  <p>La edición de 2011 del Campeonato de España de Speedcubing se celebró en Valencia, los días 16, 17 y 18 de diciembre. Tuvo un total de 93 competidores y 16 categorías.</p>
+  <p>Aquí puedes ver todos los <a href="https://www.worldcubeassociation.org/competitions/SpanishChampionship2011">resultados</a> de cada categoría.</p>
+
+  <div id="historical-podiums" class="table table-responsive">
+    <% headers = ["Categoría", "Campeón", "Single", "Media"] %>
+    <%= render "shared/compact_table", headers: headers do %>
+      <tr> <td>3x3x3</td> <td>Carlos Méndez García-Barroso</td> <td>10.13</td> <td>11.73</td> </tr>
+      <tr> <td>2x2x2</td> <td>Carlos Méndez García-Barroso</td> <td>2.19</td> <td>3.61</td> </tr>
+      <tr> <td>4x4x4</td> <td>Carlos Méndez García-Barroso</td> <td>47.31</td> <td>50.60</td> </tr>
+      <tr> <td>5x5x5</td> <td>Carlos Méndez García-Barroso</td> <td>1:25.81</td> <td>1:36.91</td> </tr>
+      <tr> <td>6x6x6</td> <td>Pablo Aguilar Domínguez</td> <td>2:57.30</td> <td>3:05.76</td> </tr>
+      <tr> <td>7x7x7</td> <td>Pablo Aguilar Domínguez</td> <td>5:16.46</td> <td>5:23.91 NR</td> </tr>
+      <tr> <td>3x3x3 Blindfolded</td> <td>Javier Vega Aramburu</td> <td>1:54.00</td> <td>DNF</td> </tr>
+      <tr> <td>3x3x3 Fewest Moves</td> <td>Alexander Olleta del Molino/Javier Cabezuelo Sánchez</td> <td>32</td> <td> </td> </tr>
+      <tr> <td>3x3 One-Handed</td> <td>Jorge Morata Carrasco</td> <td>16.93</td> <td>18.79</td> </tr>
+      <tr> <td>Clock</td> <td>Carlos Méndez García-Barroso</td> <td>7.66</td> <td>8.71</td> </tr>
+      <tr> <td>Megaminx</td> <td>Pau Vela García</td> <td>1:34.61</td> <td>1:39.50 NR</td> </tr>
+      <tr> <td>Pyraminx</td> <td>Luis J. Iáñez</td> <td>5.43</td> <td>6.63</td> </tr>
+      <tr> <td>Square-1</td> <td>Daniel Gracia Ortiz</td> <td>18.41</td> <td>22.40 NR</td> </tr>
+      <tr> <td>3x3x3 Multi-Blind</td> <td>Javier Vega Aramburu</td> <td>4/4 20:44</td> <td> </td> </tr>
+      <tr> <td>Magic</td> <td>Daniel Gracia Ortiz</td> <td>1.09</td> <td>1.20</td> </tr>
+      <tr> <td>Master Magic</td> <td>Ting Sheng Bao Yang</td> <td>2.30</td> <td>2.86</td> </tr>
+    <% end %>
+  </div>
+
+  <h3 id="Edición-2010">Edición de 2010</h3>
+  <p>La edición de 2010 del Campeonato de España de Speedcubing se celebró en Madrid, los días 17, 18 y 19 de diciembre. Tuvo un total de 68 competidores y 13 categorías.</p>
+  <p>Aquí puedes ver todos los <a href="https://www.worldcubeassociation.org/competitions/SpanishChampionship2010">resultados</a> de cada categoría.</p>
+
+  <div id="historical-podiums" class="table table-responsive">
+    <% headers = ["Categoría", "Campeón", "Single", "Media"] %>
+    <%= render "shared/compact_table", headers: headers do %>
+      <tr> <td>3x3x3</td> <td>Rodrigo Septién Rodríguez</td> <td>10.72</td> <td>12.35</td> </tr>
+      <tr> <td>2x2x2</td> <td>Carlos Méndez García-Barroso</td> <td>2.63</td> <td>3.79</td> </tr>
+      <tr> <td>4x4x4</td> <td>Rodrigo Septién Rodríguez</td> <td>42.81</td> <td>49.06</td> </tr>
+      <tr> <td>5x5x5</td> <td>Rodrigo Septién Rodríguez</td> <td>1:23.22 NR</td> <td>1:31.34 NR</td> </tr>
+      <tr> <td>3x3x3 Blindfolded</td> <td>Ángel de Jaén Gotarredona</td> <td>1:40.78</td> <td> </td> </tr>
+      <tr> <td>3x3 One-Handed</td> <td>Jorge Morata Carrasco</td> <td>17.09</td> <td>19.22</td> </tr>
+      <tr> <td>Clock</td> <td>Ernesto Fernández Regueira</td> <td>7.43</td> <td>8.22</td> </tr>
+      <tr> <td>Megaminx</td> <td>Jorge Morata Carrasco</td> <td>1:42.66</td> <td>1:59.84</td> </tr>
+      <tr> <td>Pyraminx</td> <td>Ting Sheng Bao Yang</td> <td>5.28</td> <td>7.33</td> </tr>
+      <tr> <td>Square-1</td> <td>Jorge Morata Carrasco</td> <td>20.36</td> <td>27.71</td> </tr>
+      <tr> <td>3x3x3 Multi-Blind</td> <td>Javier Espinosa García</td> <td>6/6 54:13 NR</td> <td> </td> </tr>
+      <tr> <td>Magic</td> <td>Alejandro Riveiro Rodríguez</td> <td>1.22</td> <td>1.45</td> </tr>
+      <tr> <td>Master Magic</td> <td>Ting Sheng Bao Yang</td> <td>2.28 NR</td> <td>2.87</td> </tr>
+    <% end %>
+  </div>
+
+  <h3 id="Edición-2009">Edición de 2009</h3>
+  <p>La edición de 2009 del Campeonato de España de Speedcubing se celebró en San Martín de la Vega, los días 5 y 6 de diciembre. Tuvo un total de 158 competidores y 13 categorías.</p>
+  <p>Aquí puedes ver todos los <a href="https://www.worldcubeassociation.org/competitions/SpanishChampionship2009">resultados</a> de cada categoría.</p>
+
+  <div id="historical-podiums" class="table table-responsive">
+    <% headers = ["Categoría", "Campeón", "Single", "Media"] %>
+    <%= render "shared/compact_table", headers: headers do %>
+      <tr> <td>3x3x3</td> <td>Rodrigo Septién Rodríguez</td> <td>11.63</td> <td>12.98</td> </tr>
+      <tr> <td>2x2x2</td> <td>Daniel Prieto Paz</td> <td>3.66</td> <td>4.35 NR</td> </tr>
+      <tr> <td>4x4x4</td> <td>Guillermo Conde Gil</td> <td>1:00.10</td> <td>1:04.99</td> </tr>
+      <tr> <td>5x5x5</td> <td>Guillermo Conde Gil</td> <td>1:49.15</td> <td>1:55.43 NR</td> </tr>
+      <tr> <td>3x3x3 Blindfolded</td> <td>Carlos Angosto Hernández</td> <td>2:34.08</td> <td> </td> </tr>
+      <tr> <td>3x3 One-Handed</td> <td>Jorge Morata Carrasco</td> <td>18.33</td> <td>21.35</td> </tr>
+      <tr> <td>Clock</td> <td>Javier Tirado Ortiz</td> <td>8.63</td> <td>9.61</td> </tr>
+      <tr> <td>Megaminx</td> <td>Jorge Morata Carrasco</td> <td>1:49.09</td> <td>1:54.43 NR</td> </tr>
+      <tr> <td>Pyraminx</td> <td>Rodrigo Septién Rodríguez</td> <td>6.09</td> <td>8.09</td> </tr>
+      <tr> <td>Square-1</td> <td>Rodrigo Septién Rodríguez</td> <td>22.22</td> <td>25.74 NR</td> </tr>
+      <tr> <td>3x3x3 Multi-Blind</td> <td>Ángel de Jaén Gotarredona</td> <td>5/5 48:00</td> <td> </td> </tr>
+      <tr> <td>Magic</td> <td>Isabel Casado Cascajo</td> <td>1.38</td> <td>1.56</td> </tr>
+      <tr> <td>Master Magic</td> <td>Francisco Javier Lucas Marín</td> <td>2.93</td> <td>3.46</td> </tr>
+    <% end %>
+  </div>
+
+  <h3 id="Edición-2008">Edición de 2008</h3>
+  <p>La edición de 2008 del Campeonato de España de Speedcubing se celebró en La Coruña, los días 19 y 20 de diciembre. Tuvo un total de 53 competidores y 14 categorías.</p>
+  <p>Aquí puedes ver todos los <a href="https://www.worldcubeassociation.org/competitions/Spain2008">resultados</a> de cada categoría.</p>
+
+  <div id="historical-podiums" class="table table-responsive">
+    <% headers = ["Categoría", "Campeón", "Single", "Media"] %>
+    <%= render "shared/compact_table", headers: headers do %>
+      <tr> <td>3x3x3</td> <td>Alejandro Aguado Barahona</td> <td>12.83</td> <td>15.21</td> </tr>
+      <tr> <td>2x2x2</td> <td>>Alejandro Aguado Barahona</td> <td>4.47</td> <td>5.60</td> </tr>
+      <tr> <td>4x4x4</td> <td>>Alejandro Aguado Barahona</td> <td>1:05.47</td> <td>1:14.30</td> </tr>
+      <tr> <td>5x5x5</td> <td>Nico Kupfer</td> <td>2:00.91 NR</td> <td>2:21.26 NR</td> </tr>
+      <tr> <td>3x3x3 Blindfolded</td> <td>Manuel López Sheriff</td> <td>2:19.96</td> <td>DNF</td> </tr>
+      <tr> <td>3x3x3 Fewest Moves</td> <td>Manuel López Sheriff</td> <td>40</td> <td> </td> </tr>
+      <tr> <td>3x3 One-Handed</td> <td>Alejandro Aguado Barahona</td> <td>18.58</td> <td>21.86 NR</td> </tr>
+      <tr> <td>Clock</td> <td>Ernesto Fernández Regueira</td> <td>10.63</td> <td>11.23</td> </tr>
+      <tr> <td>Megaminx</td> <td>Alejandro Riveiro Rodríguez</td> <td>2:05.70</td> <td>2:10.17 NR</td> </tr>
+      <tr> <td>Pyraminx</td> <td>Rodrigo Septién Rodríguez</td> <td>7.75</td> <td>10.24</td> </tr>
+      <tr> <td>Square-1</td> <td>Marcos Ameijeiras Moreno</td> <td>24.99 NR</td> <td>39.15 NR</td> </tr>
+      <tr> <td>3x3x3 Multi-Blind</td> <td>Ángel de Jaén Gotarredona</td> <td>9/12 1:55.58</td> <td> </td> </tr>
+      <tr> <td>Magic</td> <td>Alejandro Riveiro Rodríguez</td> <td>1.30</td> <td>1.37 NR</td> </tr>
+      <tr> <td>Master Magic</td> <td>Daniel Ortiga Villatoro</td> <td>4.66</td> <td>5.28</td> </tr>
+    <% end %>
+  </div>
+
+  <h3 id="Edición-2007">Edición de 2007</h3>
+  <p>La edición de 2007 del Campeonato de España de Speedcubing se celebró en Barcelona, el día 24 de noviembre. Tuvo un total de 50 competidores y 9 categorías.</p>
+  <p>Aquí puedes ver todos los <a href="https://www.worldcubeassociation.org/competitions/Spain2007">resultados</a> de cada categoría.</p>
+
+  <div id="historical-podiums" class="table table-responsive">
+    <% headers = ["Categoría", "Campeón", "Single", "Media"] %>
+    <%= render "shared/compact_table", headers: headers do %>
+      <tr> <td>3x3x3</td> <td>David Calvo Vivas</td> <td>12.97</td> <td>16.18</td> </tr>
+      <tr> <td>2x2x2</td> <td>David Calvo Vivas</td> <td>5.80</td> <td>6.55 NR</td> </tr>
+      <tr> <td>4x4x4</td> <td>David Calvo Vivas</td> <td>1:06.36 NR</td> <td>1:13.94</td> </tr>
+      <tr> <td>3x3x3 Blindfolded</td> <td>Carlos Angosto Hernández</td> <td>3:09.30</td> <td> </td> </tr>
+      <tr> <td>3x3 One-Handed</td> <td>David Calvo Vivas</td> <td>23.19 NR</td> <td>30.81</td> </tr>
+      <tr> <td>Clock</td> <td>Ernesto Fernández Regueira</td> <td>11.25</td> <td>11.71</td> </tr>
+      <tr> <td>Pyraminx</td> <td>Carlos Angosto Hernández</td> <td>11.38</td> <td>15.15</td> </tr>
+      <tr> <td>Magic</td> <td>Daniel Ortiga Villatoro</td> <td>2.00</td> <td>2.42</td> </tr>
+      <tr> <td>Master Magic</td> <td>Daniel Ortiga Villatoro</td> <td>4.33</td> <td>5.22 NR</td> </tr>
+    <% end %>
+  </div>
+
+  <h3 id="Edición-2006">Edición de 2006</h3>
+  <p>La edición de 2006 del Campeonato de España de Speedcubing se celebró en Bilbao, el día 9 de diciembre. Tuvo un total de 20 competidores y 6 categorías.</p>
+  <p>Aquí puedes ver todos los <a href="https://www.worldcubeassociation.org/competitions/Spain2006">resultados</a> de cada categoría.</p>
+
+  <div id="historical-podiums" class="table table-responsive">
+    <% headers = ["Categoría", "Campeón", "Single", "Media"] %>
+    <%= render "shared/compact_table", headers: headers do %>
+      <tr> <td>3x3x3</td> <td>David Calvo Vivas</td> <td>15.68</td> <td>19.01</td> </tr>
+      <tr> <td>2x2x2</td> <td>Ernesto Fernández Regueira</td> <td>6.40</td> <td>7.59</td> </tr>
+      <tr> <td>4x4x4</td> <td>David Calvo Vivas</td> <td>1:11.09 NR</td> <td>1:20.13 NR</td> </tr>
+      <tr> <td>3x3 One-Handed</td> <td>David Calvo Vivas</td> <td>36.18 NR</td> <td>39.10 NR</td> </tr>
+      <tr> <td>Clock</td> <td>Ernesto Fernández Regueira</td> <td>9.51 NR</td> <td>11.30 NR</td> </tr>
+      <tr> <td>Magic</td> <td>David Calvo Vivas</td> <td>1.62 NR</td> <td>2.13 NR</td> </tr>
+    <% end %>
+  </div>
+
+  <h3 id="Edición-2005">Edición de 2005</h3>
+  <p>La edición de 2005 del Campeonato de España de Speedcubing se celebró en Valencia, el día 3 de diciembre. Tuvo un total de 20 competidores y 5 categorías.</p>
+  <p>Aquí puedes ver todos los <a href="https://www.worldcubeassociation.org/competitions/Spain2005">resultados</a> de cada categoría.</p>
+
+  <div id="historical-podiums" class="table table-responsive">
+    <% headers = ["Categoría", "Campeón", "Single", "Media"] %>
+    <%= render "shared/compact_table", headers: headers do %>
+      <tr> <td>3x3x3</td> <td>Ernesto Fernández Regueira</td> <td>22.52</td> <td>24.24</td> </tr>
+      <tr> <td>2x2x2</td> <td>Javier París</td> <td>7.32</td> <td>10.24 NR</td> </tr>
+      <tr> <td>4x4x4</td> <td>David Calvo Vivas</td> <td>2:13.53 NR</td> <td>2:20.99 NR</td> </tr>
+      <tr> <td>3x3x3 Blindfolded</td> <td>Carlos Angosto Hernández</td> <td>10:04.00 NR</td> <td> </td> </tr>
+      <tr> <td>3x3 One-Handed</td> <td>David Calvo Vivas</td> <td>53.77 NR</td> <td>58.39 NR</td> </tr>
+    <% end %>
+  </div>
+
+  <h3 id="Edición-2004">Edición de 2004</h3>
+  <p>La edición de 2004 del Campeonato de España de Speedcubing se celebró en Madrid, el día 13 de noviembre. Tuvo un total de 20 competidores y 1 categoría.</p>
+  <p>Aquí puedes ver todos los <a href="https://www.worldcubeassociation.org/competitions/Spain2004">resultados</a> de cada categoría.</p>
+
+  <div id="historical-podiums" class="table table-responsive">
+    <% headers = ["Categoría", "Campeón", "Single", "Media"] %>
+    <%= render "shared/compact_table", headers: headers do %>
+      <tr> <td>3x3x3</td> <td>Ernesto Fernández Regueira</td> <td>28.02</td> <td>31.43 NR</td> </tr>
+    <% end %>
+  </div>
 <% end %>
