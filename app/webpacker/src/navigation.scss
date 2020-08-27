@@ -31,6 +31,7 @@
         .brand-name {
           .blue {
             color: $blue;
+            text-shadow: white 0 0px 2px;
           }
           .white {
             color: $white;
@@ -50,10 +51,10 @@
         }
         .brand-social {
           a {
-            color: rgba(0, 0, 0, 1);
+            color: $blue;
             margin-right: 5px;
             &:hover {
-              color: rgba(0, 0, 0, 0.5);
+              color: rgba(0, 0, 0, 1);
             }
           }
         }
