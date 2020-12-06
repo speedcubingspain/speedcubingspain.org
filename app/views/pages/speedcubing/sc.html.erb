@@ -9,6 +9,7 @@
 
   <h4 ide="¿Cómo puedo apuntarme?">¿Cómo puedo apuntarme?</h4>
   <p>Para registrarte, solo tendrás que rellenar el <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZqy7epQPzrMR_vOGhLudahaMJIq7wHVn-u3-XPPbFm9w4Tw/viewform">formulario de inscripción</a>.</p>
+  <p><i><b>IMPORTANTE</b>: El registro acaba el sábado 29 de agosto a las 14:00h.</i></p> 
 
   <h4 ide="Participantes">Participantes</h4>
   <p><a href="https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vQMxTeV43sf7ArtKXTf4G3ipV6ZNbbOcW4-b8WigVAjEOh5kx6NWR8S2grcIHIzMwPNpQsBWE8NbhKc/pubhtml?gid=361444493&single=true&urp=gmail_link">Aquí</a> podéis ver a todos los participantes del campeonato.</p>
@@ -18,6 +19,7 @@
 
   <h4 ide="Jornadas">Jornadas</h4>
   <p>Las jornadas serán de lunes a sábado (observése el calendario más abajo). A comienzos de la jornada recibiréis un formulario por cada categoría a la que os hayáis inscrito, el cual deberéis rellenar con vuestros resultados antes del final de la jornada.</p>
+  <p>Dichos formularios se cerrarán el día puesto en el Calendario a las 14:00h.</p>
   <p>Para evitar irregularidades, cada formulario vendrá con un tiempo límite, es decir, una vez abierto, deberéis rellenar y enviar el formulario antes del tiempo límite. Además, deberéis grabar vuestras resoluciones mostrando en el video como abrís y enviáis el formulario, así como vuestros resultados. Estos videos solo se pedirán a aquellos que se clasifiquen para los <i>play offs</i>. Si no tenéis vídeo acreditativo de todas la jornadas no podréis clasificaros, así que aseguraos de grabarlos y guardarlos correctamente.</p>
   <p>Para cronometrarse, deberéis usar un cronómetro Speed Stacks Stackmat timer®️ (G2, G3 o G4) para realizar las resoluciones, respetando en todo momento las penalizaciones de la WCA propias de las competiciones oficiales (véase el <a href="https://www.worldcubeassociation.org/regulations/">Reglamento de la WCA</a>). En caso de no tener ningún Speed Stacks Stackmat timer, se podrá permitir el uso de teclado, siempre y cuando consideremos que no se está realizando ninguna ventaja, en dicho caso, se podrá optar por la descalificación.</p>
   <p>La puntuación de cada jornada se obtendrá de manera parecida al <i>Kinchrank</i>, con puntos extra para los mejor clasificados. En concreto, se calcularán de la siguiente manera:</p>
@@ -28,7 +30,7 @@
     <% headers = ["Posición", "Bonus Points"] %>
     <%= render "shared/compact_table", headers: headers do %>
       <tr> <td>1ª</td> <td>25</td> </tr>
-      <tr> <td>2ª</td> <td>18</td> </tr>
+      <tr> <td>2ª</td> <td>19</td> </tr>
       <tr> <td>3ª</td> <td>15</td> </tr>
       <tr> <td>4ª</td> <td>12</td> </tr>
       <tr> <td>5ª</td> <td>10</td> </tr>
@@ -43,22 +45,23 @@
   </div>
 
   <p>Los puntos obtenidos en cada jornada se sumarán a los obtenidos en jornadas anteriores, los cuales se mostrarán en la clasificación general. Quienes obtengan mayor puntuación en la clasificación general al final de la última jornada serán clasificados para los <i>play offs</i>.</p>
+  <p><b>Desempates:</b> Si en el ranking general dos competidores tienen la misma puntuación, el desempate se hará siguiendo este orden:
+    <ul>
+      <li>En primer lugar, se comprobará quien ha obtenido mayor puntuación de los dos en alguna jornada. </li>
+      <li>En caso de que estas sean las mismas, se pasará a la segunda puntuación, a la tercera y sucesivamente. </li>
+      <li>Si siguen coincidiendo, irá primero el que tenga mejor media en la categoría correspondiente, excepto en BLD y Fewest Moves que será con el single.</li>
+    </ul>
   <p>Los resultados de cada jornada se publicarán al final de la misma.</p>
 
   <h4 ide="Clasificación jornadas">Clasificación jornadas</h4>
-  <p>Aquí se subirán los enlaces de las diferentes Jornadas cuando finalicen:
-    <ul>
-      <li>Jornada 1</li>
-      <li>Jornada 2</li>
-      <li>Jornada 3</li>
-      <li>Jornada 4</li>
-      <li>Jornada 5</li>
-    </ul>
-  </p>
+  <p>Si quieres ver el Ranking General, los tiempos de cada Jornada y tu Ficha de Participante, puedes entrar aquí</p>
+  <center><h4 ide="Clasificación jornadas"><a href="https://nacional2020.carloslopezmari.com/">RESULTADOS NACIONAL ONLINE 2020</a></h4></center>
 
   <h4 ide="Play offs"><i>Play offs</i></h4>
   <p>La mayoría de categorías finalizarán con <i>play offs</i> (observése el cuadro de Categorías).</p>
-  <p>Los mejores clasificados en las jornadas competirán entre sí, en rondas cara a cara. Por cada batalla obtendréis una puntuación y el que llegue a un determinado número de puntos ganará y pasará a la siguiente ronda.</p>
+  <p>Los mejores clasificados en las jornadas pasarán a la fase de Play offs. Para hacerlo, deberán enviarnos, cuando se lo pidamos, los vídeos de todas las resoluciones de cada categoría.</p>
+  <p><i><b>IMPORTANTE</b>: Guardad todos los videos de todas las jornadas.</i></p> 
+  <p>Dichos clasificados en las jornadas competirán entre sí, en rondas cara a cara. Por cada batalla obtendréis una puntuación y el que llegue a un determinado número de puntos ganará y pasará a la siguiente ronda.</p>
   <p>Cada ronda clasificatoria se dividirá en varias batallas. Cada batalla consistirá en 5 resoluciones, con las cuales obtendrás puntuación de la siguiente manera:
     <ul>
       <li>Habiendo hecho el mejor single de la batalla: 1 Punto.</li>
@@ -68,8 +71,12 @@
   Se aplican las siguientes excepciones:</p>
     <ul>
       <li>Para la categoría de 3x3x3 Blindfolded se realizarán batallas a un solo tiempo, donde el ganador conseguirá un punto, y en caso de empate, cada competidor obtendrá 0,5 puntos.</li>
-      <li>Para 3x3x3 Fewest Moves, se mandará una mezcla el día 5 de Octubre, teniendo hasta el 9 para resolverla y mandar su solución.</li>
+      <li>Para 3x3x3 Fewest Moves, se mandarán tres mezclas el día 3 de Octubre, teniendo hasta el 10 a las 23:59 para resolverlas y mandar sus soluciones. El ganador se decidirá por Mo3.</li>
     </ul>
+  <p><i><b>IMPORTANTE</b>: Debido a ser un Campeonato Nacional, solamente podrán pasar a los Play offs aquellos competidores con nacionalidad española.</i></p>
+  <p><i><b>IMPORTANTE</b></i>: Los Playoffs se retransmitirán a traves del Twitch de la AES.</p>
+  <center><h4 ide="Twitch AES"><a href="https://www.twitch.tv/aespeedcubing">TWITCH DE LA AES</a></h4></center>
+
 
   <h4 ide="Categorías">Categorías</h4>
   <p>Aquí os dejamos una tabla con todas las categorías a las que os podréis presentar, con los tiempos límite para enviar los formularios y los puntos necesarios en cada <i>play off</i>, así como el número de clasificados:</p>
@@ -80,7 +87,7 @@
     <%= render "shared/compact_table", headers: headers do %>
       <tr>
         <td>3x3x3 Cube</td>
-        <td>10min</td>
+        <td>20min</td>
         <td>8</td>
         <td>10</td>
         <td>12</td>
@@ -88,7 +95,7 @@
       </tr>
       <tr>
         <td>2x2x2 Cube</td>
-        <td>10min</td>
+        <td>20min</td>
         <td>8</td>
         <td>10</td>
         <td>12</td>
@@ -96,7 +103,7 @@
       </tr>
       <tr>
         <td>4x4x4 Cube</td>
-        <td>15min</td>
+        <td>30min</td>
         <td>4</td>
         <td>**</td>
         <td>6</td>
@@ -104,7 +111,7 @@
       </tr>
       <tr>
         <td>5x5x5 Cube</td>
-        <td>20min</td>
+        <td>40min</td>
         <td>4</td>
         <td>**</td>
         <td>5</td>
@@ -112,7 +119,7 @@
       </tr>
       <tr>
         <td>6x6x6 Cube</td>
-        <td>20min</td>
+        <td>50min</td>
         <td>*</td>
         <td> </td>
         <td> </td>
@@ -120,7 +127,7 @@
       </tr>
       <tr>
         <td>7x7x7 Cube</td>
-        <td>25min</td>
+        <td>50min</td>
         <td>*</td>
         <td> </td>
         <td> </td>
@@ -128,7 +135,7 @@
       </tr>
       <tr>
         <td>3x3x3 Blindfolded</td>
-        <td>25min</td>
+        <td>35min</td>
         <td>4</td>
         <td>**</td>
         <td>5</td>
@@ -144,7 +151,7 @@
       </tr>
       <tr>
         <td>3x3x3 One-Handed</td>
-        <td>15min</td>
+        <td>25min</td>
         <td>8</td>
         <td>8</td>
         <td>10</td>
@@ -152,7 +159,7 @@
       </tr>
       <tr>
         <td>Megaminx</td>
-        <td>25min</td>
+        <td>40min</td>
         <td>*</td>
         <td> </td>
         <td> </td>
@@ -160,7 +167,7 @@
       </tr>
       <tr>
         <td>Pyraminx</td>
-        <td>10min</td>
+        <td>20min</td>
         <td>8</td>
         <td>10</td>
         <td>12</td>
@@ -168,7 +175,7 @@
       </tr>
       <tr>
         <td>Skewb</td>
-        <td>10min</td>
+        <td>20min</td>
         <td>8</td>
         <td>10</td>
         <td>12</td>
@@ -176,7 +183,7 @@
       </tr>
       <tr>
         <td>Square-1</td>
-        <td>15min</td>
+        <td>25min</td>
         <td>4</td>
         <td>**</td>
         <td>10</td>
@@ -197,24 +204,65 @@
       <li>Jornada 3: del 14 al 19 de septiembre.</li>
       <li>Jornada 4: del 21 al 26 de septiembre.</li>
       <li>Jornada 5: del 28 de septiembre al 1 de octubre.</li>
-      <li>Octavos, cuartos y semifinales: 5-6 de octubre *.</li>
+      <li>Cuartos y semifinales: 3-4 de octubre *.</li>
       <li>Finales: 10-11 de octubre *.</li>
     </ul>
-  <i>* El horario de los <u>play offs</u>, se mostrará próximamente.</i></p>
+  Aquí puedes ver el <a href="https://nacional2020.carloslopezmari.com/calendario">horario y cuadros</a> de los <u>play offs</u>.</p>
 
   <h4 ide="Premios">Premios</h4>
-<p>Estos son algunos de los premios de este campeonato:</p>
-<ul>
-  <li><b>Asociación Española de Speedcubing</b>
+  <p>Estos son algunos de los premios de este campeonato:</p>
     <ul>
-      <li>Inscripción <b>GRATUITA</b> en el XVII Campeonato de España de Speedcubing para el campeón de cada categoría.</li>
+       <li><b>Asociación Española de Speedcubing</b>
+          <ul>
+              <li>Inscripción <b>GRATUITA</b> en el XVII Campeonato de España de Speedcubing para el campeón de cada categoría.</li>
+          </ul>
+       </li>
+       <li><b>Kubekings</b>
+          <ul>
+              <li>El ganador de la categoría 3x3x3, obtendrá un <b>bono de 50€</b> para gastar en <a href="https://kubekings.com/">Kubekings</a>.</li>
+          </ul>
+       </li>
     </ul>
-  </li>
-  <li>Próximamente...</li>
-</ul>
+      
+  <h4 ide="Sorteo">Sorteo</h4>
+  <h5 ide="JukiMods">JukiMods</h5>
+   <p>Estos son los cubos que sorteará <a href="http://jukimods.com/">JukiMods</a>.</p>
+    <ul>
+       <li>2x2x2 a elegir de todo el catálogo de <a href="http://jukimods.com/mods/">JukiMods</a> o <a href="http://jukimods.com/custom/#catalogo">Juki Custom Cubes</a>.</li>
+       <li>3x3x3 a elegir de todo el catálogo de <a href="http://jukimods.com/mods/">JukiMods</a> o <a href="http://jukimods.com/custom/#catalogo">Juki Custom Cubes</a>.</li>
+    </ul>
+   <h5 ide="KubeKings">Kubekings</h5>
+    <p>Estos son los cubos que sorteará <a href="https://kubekings.com/">Kubekings</a>.</p>
+    <ul>
+       <li>Qiyi Clock M (Porra).</li>
+       <li>Gan 356 M.</li>
+       <li>Moyu Weilong WR M 2020.</li>
+       <li>X-Man Bell Pyraminx V2 M.</li>
+       <li>Qiyi Pentacle Cube.</li>
+    </ul>
+         
+    <p><i><b>REQUISITOS</b></i></p>
+    <ul>
+       <li>Participar en las 5 jornadas, como mínimo.</li>
+       <li>Solo válido para territorio español (incluido Canarias y Baleares).</li>
+    </ul>
+         
+     <h4 ide="Porra">Porra</h4>
+    <p>El Qiyi Clock M de <a href="https://kubekings.com/">Kubekings</a> se otorgará al ganador de esta porra. El formato de la porra consistirá como sigue:</p>
+    <ul>
+       <li>El Jueves 1 se mandará un correo con un enlace para participar en la porra.</li>
+       <li>Dicho formulario cerrará en cuanto comiencen los play-offs, es decir, el Sábado 3 a las 11:00 de la mañana.</li>
+       <li>Para participar, deberéis introducir vuestros nombres y seleccionar en cada categoría quien de los que han pasado en playoffs creéis que será el ganador de dicha categoría.</li>
+       <li> Las categorías que no poseen play-offs no serán seleccionables (ya que ya poseerán ganador).</li>
+       <li>Por cada acierto obtendrás un punto. El ganador será quien haya obtenido más puntos. </li>
+    </ul>
 
-  <p>¡Estad atentos para más novedades acerca del campeonato!</p>
-  <p>En caso de tener alguna duda, contactanos en <a href = "mailto: nacionalonline2020@speedcubingspain.org">nacionalonline2020@speedcubingspain.org</a> </p>
+    <p><i><b>IMPORTANTE</b></i>: En caso de empates, ganará el que haya rellenado y enviado el formulario antes, así que, ¡enviadlo cuanto antes!</p>
+    <p>Conforme se vayan sabiendo los ganadores, se irá actualizando las puntuaciones. Para ver las puntuaciones visita el siguiente enlace:</p>
+    <center><h4 ide="Resultados Porra"><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vS-k7kr3N-c00p7zCuZG8AWJ_2MdHQOLE1ZYo3hVXkVedRNf9Zg23PT8l4jZUPBtaADBQNC8uEd-bFG/pubhtml?gid=114280384&single=true">RESULTADOS DE LA PORRA</a></h4></center>
+
+    <p>¡Estad atentos para más novedades acerca del campeonato!</p>
+    <p>En caso de tener alguna duda, contactanos en <a href = "mailto: nacionalonline2020@speedcubingspain.org">nacionalonline2020@speedcubingspain.org</a> </p>
 
 <h2 id="pasadas-ediciones"><u>Pasadas ediciones</u></h2>
   <p>Para obtener información sobre pasadas ediciones, dirígete a <a href="/speedcubing/sc_historical/">esta página</a>.</p>
