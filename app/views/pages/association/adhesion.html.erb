@@ -1,7 +1,7 @@
 <% provide(:title, "Nuevo socio") %>
 <% provide(:active_section, "association") %>
 <%= render "layouts/page_wrapper", title: "Nuevo socio" do %>
-  <p>Parte de los medios financieros disponibles para la asociación provienen de las cuotas de socio. Cualquier persona puede hacerse socio de la asociación por un periodo de un año pagando una cuota de 12 €.</p>
+  <p>Parte de los medios financieros disponibles para la asociación provienen de las cuotas de socio. Según el artículo 22 de los estatutos de la AES, cualquier persona, mayor de 14 años, puede hacerse socio de la asociación por un periodo de un año abonando una cuota de 12 €.</p>
 
   <p>El pago de la cuota de socio se realiza <%= link_to 'aquí', new_subscription_path %>. ¡Ojo, deberás haber iniciado sesión con tu cuenta de la WCA primero!</p>
 
@@ -14,4 +14,14 @@
     <li>Podrás unirte al grupo de Telegram exclusivo para socios de la AES.</li>
     <li>Podrás participar en los talleres que organizamos.</li>
   </ul>
+
+  <p>Si quieres apoyar a que la asociación siga creciendo, también tienes la oportunidad de hacer una donación.</p>
+
+  <form action="https://paypal.me/AESpeedcubing?locale.x=es_ES" method="post" target="_top">
+  <input type="hidden" name="business" value="FXVV35Q7Q4FTE" />
+  <input type="hidden" name="item_name" value="donativos" />
+  <input type="hidden" name="currency_code" value="EUR" />
+  <input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Botón Donar con PayPal" />
+  <img alt="" border="0" src="https://www.paypal.com/es_ES/i/scr/pixel.gif" width="1" height="1" />
+  </form>
 <% end %>
